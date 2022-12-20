@@ -1,0 +1,21 @@
+.footer-section-background {
+  width: 100%;
+  position: absolute;
+}
+
+.footer-page-section {
+  height: 500px;
+}
+
+.footer-smart-stitches-logo {
+  display: flex;
+  height: 150px;
+  position: relative;
+  margin-left: 450px;
+}
+
+.hand-made-with-love {
+  position: relative;
+  text-align: center;
+  margin-top: 50px;
+}

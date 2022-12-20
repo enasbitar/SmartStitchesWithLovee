@@ -1,0 +1,14 @@
+.contact-us-section-background {
+  width: 100%;
+  position: absolute;
+}
+
+.contact-us-division {
+  background-color: navy;
+  position: absolute;
+}
+
+.contact-us-section {
+  height: 700px;
+  position: relative;
+}

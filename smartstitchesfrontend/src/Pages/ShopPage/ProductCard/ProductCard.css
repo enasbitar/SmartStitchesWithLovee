@@ -1,0 +1,19 @@
+.product-card-item {
+  align-items: center;
+  overflow: hidden;
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: hotpink;
+}
+
+.product-image {
+  display: flex;
+  height: 380px;
+  width: 380px;
+}
+.product-card-name-description {
+  background-color: whitesmoke;
+  width: 600px;
+}

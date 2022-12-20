@@ -1,0 +1,19 @@
+.banner-smart-stitches-logo {
+  height: 100px;
+}
+
+.search-bar-logo {
+  height: 50px;
+}
+
+.banner-declaration {
+  color: navy;
+}
+
+.banner-container {
+  display: flex;
+  margin: 10px;
+  padding: 30px;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -1,0 +1,24 @@
+.products-main-container {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  text-align: center;
+  position: relative;
+  align-items: center;
+  height: 800px;
+  margin: 100px;
+}
+
+.products-list-container {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 100px;
+}
+
+.parent-relative {
+  position: relative;
+}
