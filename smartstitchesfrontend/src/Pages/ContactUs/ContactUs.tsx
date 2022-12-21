@@ -4,7 +4,7 @@ import contactusbackground from "../../Assets/BackgroundImages/contactus.jpeg";
 
 function ContactUs() {
   return (
-    <div>
+    <div id="contact-us">
       <div className="contact-us-section">
         <img
           className="contact-us-section-background"

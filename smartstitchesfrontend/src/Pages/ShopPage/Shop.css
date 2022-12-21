@@ -1,24 +1,37 @@
-.products-main-container {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  display: flex;
-  overflow-y: hidden;
-  overflow-x: scroll;
-  text-align: center;
-  position: relative;
-  align-items: center;
-  height: 800px;
-  margin: 100px;
-}
-
 .products-list-container {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  position: absolute;
-  display: flex;
+  background-color: aqua;
+  height: 700px;
+  padding: 100px;
+  display: grid;
+  grid-auto-flow: column;
+  scroll-behavior: auto;
+  gap: 1.2rem;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
   align-items: center;
-  justify-content: space-around;
-  margin: 100px;
+  justify-content: center;
 }
 
-.parent-relative {
-  position: relative;
+.products-list-container::-webkit-scrollbar {
+  display: none;
+}
+
+.swipe {
+  opacity: 0.4;
+  display: flex;
+  justify-content: center;
+  font-family: "Eb Garamond", serif;
+  font-size: 30px;
+}
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  letter-spacing: 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }

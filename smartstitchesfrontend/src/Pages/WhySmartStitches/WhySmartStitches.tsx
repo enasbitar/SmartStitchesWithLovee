@@ -3,7 +3,7 @@ import "./WhySmartStitches.css";
 
 function WhySmartStitches() {
   return (
-    <div className="#why-smart-stitches">
+    <div id="why-smart-stitches" className="#why-smart-stitches">
       <div className="why-smart-stitches-container">
         <h1 className="about-us-quote">
           “Don’t find customers for your products, find products for your

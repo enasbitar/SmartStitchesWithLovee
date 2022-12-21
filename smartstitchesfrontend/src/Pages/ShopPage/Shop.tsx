@@ -16,68 +16,94 @@ export default function SHOP() {
     {
       name: "earrings",
       price: "250 $",
-      description: "handmade",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       icon: itemone,
     },
     {
       name: "necklaces",
       price: " 200 $",
-      description: "handmade",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       icon: itemtwo,
     },
     {
       name: "bracelets",
       price: " 350 $",
-      description: "handmade",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       icon: itemthree,
     },
     {
       name: "earrings",
       price: " 250 $",
-      description: "handmade",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       icon: itemfour,
     },
     {
       name: "necklaces",
       price: " 350 $",
-      description: "handmade",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       icon: itemfive,
     },
     {
       name: "rings",
       price: " 300 $",
-      description: "handmade",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       icon: itemsix,
     },
     {
       name: "rings",
       price: " 150 $",
-      description: "handmade",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       icon: itemseven,
     },
   ];
   return (
     <>
-      <div id="Shop">
-        <div id="products" className="parent-relative">
-          <div className="product-list-main-container">{/*productslist */}</div>
-          <div className="products-main-container" id="products">
-            <div className="products-list-container">
-              {products.length > 0 &&
-                products.map((product: any, index: number) => {
-                  return (
-                    <ProductCard
-                      key={index}
-                      name={product.name}
-                      description={product.description}
-                      price={product.price}
-                      icon={product.icon}
-                    />
-                  );
-                })}
-            </div>
-          </div>
-        </div>
+      <div id="Shop" className="products-list-container ">
+        {products.length > 0 &&
+          products.map((product: any, index: number) => {
+            return (
+              <>
+                <button
+                  className="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleControls"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    className="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span className="visually-hidden">Previous</span>
+                </button>
+                <ProductCard
+                  key={index}
+                  name={product.name}
+                  description={product.description}
+                  price={product.price}
+                  icon={product.icon}
+                />
+                <button
+                  className="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleControls"
+                  data-bs-slide="next"
+                >
+                  <span
+                    className="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span className="visually-hidden">Next</span>
+                </button>
+              </>
+            );
+          })}
       </div>
     </>
   );
