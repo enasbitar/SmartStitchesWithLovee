@@ -1,27 +1,24 @@
 .product-card-item {
-  background-color: hotpink;
   scroll-snap-align: start;
+  background-color: white;
+  justify-content: center;
   align-items: center;
   display: flex;
   padding: 10px;
-  margin: 100px;
+  margin-top: 70px;
   width: 100%;
-}
-
-.card {
-  cursor: pointer;
-  transform: scale(1.02, 1.02);
 }
 
 .product-image {
   display: flex;
   height: 380px;
   width: 380px;
-  margin: 20px;
+  margin: 10px;
 }
 .product-card-name-description {
-  background-color: beige;
+  background-color: white;
   width: 800px;
   height: 380px;
-  padding: 20px;
+  padding: 15px;
+  margin: 10px;
 }

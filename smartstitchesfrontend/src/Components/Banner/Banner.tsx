@@ -15,8 +15,12 @@ function Banner() {
       <h3 className="banner-declaration">
         THE ORDERS WON'T BE READY BEFORE 20 WORKING DAYS
       </h3>
-
-      <img className="search-bar-logo" src={searchbarlogo} alt="Logo" />
+      <div className="search-box-and-logo">
+        <label className="search-box">
+          <input type="text" name="name" />
+        </label>
+        <img className="search-bar-logo" src={searchbarlogo} alt="Logo" />
+      </div>
     </div>
   );
 }

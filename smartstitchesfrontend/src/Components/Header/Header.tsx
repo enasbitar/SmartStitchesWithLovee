@@ -6,7 +6,7 @@ function Header() {
   return (
     <div>
       <div className="header-container">
-        <ul className="second-header-menu ">
+        <ul className="header-menu ">
           <li className="header-menu-item">
             <HashLink
               className="header-menu-item-link"
@@ -17,7 +17,7 @@ function Header() {
           </li>
           <li className="header-menu-item">
             <HashLink className="header-menu-item-link" to="/#Shop">
-              SHOP
+              OUR PRODUCTS
             </HashLink>
           </li>
           <li className="header-menu-item">

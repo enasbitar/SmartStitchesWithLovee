@@ -3,6 +3,7 @@ import HomePage from "./Components/HomePage/HomePage";
 import ContactUs from "./Pages/ContactUs/ContactUs";
 import SHOP from "./Pages/ShopPage/Shop";
 import WhySmartStitches from "./Pages/WhySmartStitches/WhySmartStitches";
+import "./App.css";
 
 function App() {
   return (

@@ -1,4 +1,8 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import "./Shop.css";
 //component
 import ProductCard from "./ProductCard/ProductCard";
@@ -63,47 +67,32 @@ export default function SHOP() {
       icon: itemseven,
     },
   ];
+
   return (
     <>
-      <div id="Shop" className="products-list-container ">
-        {products.length > 0 &&
-          products.map((product: any, index: number) => {
-            return (
-              <>
-                <button
-                  className="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#carouselExampleControls"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    className="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span className="visually-hidden">Previous</span>
-                </button>
-                <ProductCard
-                  key={index}
-                  name={product.name}
-                  description={product.description}
-                  price={product.price}
-                  icon={product.icon}
-                />
-                <button
-                  className="carousel-control-next"
-                  type="button"
-                  data-bs-target="#carouselExampleControls"
-                  data-bs-slide="next"
-                >
-                  <span
-                    className="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span className="visually-hidden">Next</span>
-                </button>
-              </>
-            );
-          })}
+      {" "}
+      <div className="products-container">
+        <div id="Shop" className="our-products-bar">
+          <h1 className="shop-title"> SHOP </h1>
+        </div>
+        <div className="products-list-container ">
+          {products.length > 0 &&
+            products.map((product: any, index: number) => {
+              return (
+                <>
+                  <Slider>
+                    <ProductCard
+                      key={index}
+                      name={product.name}
+                      description={product.description}
+                      price={product.price}
+                      icon={product.icon}
+                    />
+                  </Slider>
+                </>
+              );
+            })}
+        </div>
       </div>
     </>
   );

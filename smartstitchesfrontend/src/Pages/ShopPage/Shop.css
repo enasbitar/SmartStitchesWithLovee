@@ -1,37 +1,38 @@
 .products-list-container {
-  background-color: aqua;
-  height: 700px;
-  padding: 100px;
-  display: grid;
-  grid-auto-flow: column;
-  scroll-behavior: auto;
-  gap: 1.2rem;
-  overflow-y: auto;
-  overscroll-behavior-x: contain;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none;
+  background-color: white;
+  width: 100wh;
+  height: 100vh;
+  display: flex;
   align-items: center;
   justify-content: center;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  overflow-y: hidden;
 }
 
 .products-list-container::-webkit-scrollbar {
-  display: none;
+  display: grid;
 }
 
-.swipe {
-  opacity: 0.4;
-  display: flex;
-  justify-content: center;
-  font-family: "Eb Garamond", serif;
-  font-size: 30px;
+.our-products-bar {
+  align-items: center;
+  text-align: center;
+  background-color: #606cb4;
+  height: 120px;
+  width: 150px;
+  margin: 250px;
+  margin-top: 0;
+  padding: 20px;
+  position: absolute;
 }
 
-* {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  letter-spacing: 0px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  scroll-behavior: smooth;
+.shop-title {
+  margin-top: 80px;
+  color: white;
+  font-size: 24px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.products-container {
+  padding: 10px;
 }

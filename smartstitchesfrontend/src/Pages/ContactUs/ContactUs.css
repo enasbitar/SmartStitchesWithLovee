@@ -1,14 +1,35 @@
-.contact-us-section-background {
-  width: 100%;
-  position: absolute;
-}
-
-.contact-us-division {
-  background-color: navy;
-  position: absolute;
-}
-
-.contact-us-section {
-  height: 700px;
+.contact-us-container {
+  height: 100vh;
+  width: 100wh;
   position: relative;
+  overflow: hidden;
+}
+
+.contact-us-image {
+  height: 86vh;
+  position: absolute;
+}
+.contact-us-bar {
+  align-items: center;
+  text-align: center;
+  background-color: #606cb4;
+  height: 120px;
+  width: 150px;
+  margin: 250px;
+  margin-top: 0;
+  padding: 20px;
+  position: absolute;
+}
+
+.contact-us-title {
+  margin-top: 100px;
+  color: white;
+  font-size: 24px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.email-to-smart-stitches {
+  color: #606cb4;
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }

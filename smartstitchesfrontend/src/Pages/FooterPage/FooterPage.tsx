@@ -13,14 +13,8 @@ function FooterPage() {
           alt="Lofooterimagego"
         />
 
-        <div>
-          <img
-            className="footer-smart-stitches-logo"
-            src={smartstitcheslogo}
-            alt="Logo"
-          />
-        </div>
-        <div className="hand-made-with-love">
+        <div className="footer-logo-and-quote">
+          <img src={smartstitcheslogo} alt="Logo" />
           <h3>HAND MADE</h3>
           <h3>WITH LOVE</h3>
         </div>
