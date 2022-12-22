@@ -1,15 +1,18 @@
 import React from "react";
 import "./Banner.css";
+import { useNavigate } from "react-router-dom";
 import smartstitcheslogo from "../../Assets/BannerImages/Logo.png";
 import searchbarlogo from "../../Assets/BannerImages/searchbaricon.png";
 
 function Banner() {
+  const navigate = useNavigate();
   return (
     <div className="banner-container">
       <img
         className="banner-smart-stitches-logo"
         src={smartstitcheslogo}
         alt="Logo"
+        onClick={() => navigate("/products-management")}
       />
 
       <h3 className="banner-declaration">

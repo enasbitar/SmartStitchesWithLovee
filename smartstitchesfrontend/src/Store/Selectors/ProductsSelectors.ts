@@ -1,2 +1,1 @@
-import React from 'react'
-
+export const getAllProductsSelector: any = (state: any) => state.ProductReducer;

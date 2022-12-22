@@ -1,7 +1,4 @@
 import React, { useRef, useState } from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 import "./Shop.css";
 //component
@@ -80,15 +77,13 @@ export default function SHOP() {
             products.map((product: any, index: number) => {
               return (
                 <>
-                  <Slider>
-                    <ProductCard
-                      key={index}
-                      name={product.name}
-                      description={product.description}
-                      price={product.price}
-                      icon={product.icon}
-                    />
-                  </Slider>
+                  <ProductCard
+                    key={index}
+                    name={product.name}
+                    description={product.description}
+                    price={product.price}
+                    icon={product.icon}
+                  />
                 </>
               );
             })}
