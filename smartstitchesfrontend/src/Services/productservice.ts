@@ -5,8 +5,23 @@ const getAllProducts = () => {
   return httpCommon.get("/products/");
 };
 
-const productservice = {
-  getAllProducts,
+const createProduct = (product: any) => {
+  return httpCommon.post("Product", product);
 };
 
-export default productservice;
+const updateProduct = (id: string, product: any) => {
+  return httpCommon.put(`Product/${id}`, product);
+};
+
+const deleteProduct = (id: string) => {
+  return httpCommon.delete(`Product/${id}`);
+};
+
+const ProductsService = {
+  getAllProducts,
+  createProduct,
+  updateProduct,
+  deleteProduct,
+};
+
+export default ProductsService;
