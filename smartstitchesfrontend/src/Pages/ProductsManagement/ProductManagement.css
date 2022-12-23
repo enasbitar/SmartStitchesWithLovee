@@ -9,3 +9,11 @@
 .products-management-data-grid {
   margin-top: 50px;
 }
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.create-button {
+  margin-bottom: 30px !important;
+  margin-right: 30px !important;
+}
