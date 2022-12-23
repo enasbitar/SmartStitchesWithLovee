@@ -21,7 +21,6 @@ export const getAllProductsRequest = () => (dispatch: any) => {
       );
     });
   } catch (error) {
-    console.log("error", error);
     dispatch(removeLoading());
   }
 };
@@ -63,8 +62,8 @@ export const updateProductRequest =
 
       productservice.updateProduct(id, product).then(
         (response: any) => {
-          console.log("response", response);
-          dispatch(updateProductSuccess(response.data));
+          console.log("response update", response);
+          dispatch(updateProductSuccess(response.data.id));
           closePopup();
           dispatch(removeLoading());
         },
@@ -92,7 +91,7 @@ export const deleteProductRequest =
 
       productservice.deleteProduct(id).then(
         (response: any) => {
-          console.log("response", response);
+          console.log("response delete", response);
           dispatch(deleteProductSuccess(response.data.id));
           closePopup();
           dispatch(removeLoading());
@@ -113,7 +112,3 @@ export const deleteProductRequest =
       dispatch(removeLoading());
     }
   };
-<<<<<<< HEAD
-
-=======
->>>>>>> 8978f7b468523266b5bf8c354946e58486cdad3b

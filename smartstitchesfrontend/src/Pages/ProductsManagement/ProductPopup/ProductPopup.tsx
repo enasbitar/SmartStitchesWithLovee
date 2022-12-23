@@ -2,7 +2,6 @@ import { Button, Grid, IconButton, TextField, Typography } from "@mui/material";
 import { useState, useEffect } from "react";
 import "./ProductPopup.css";
 import CloseIcon from "@mui/icons-material/Close";
-
 import {
   createProductRequest,
   updateProductRequest,
@@ -15,19 +14,21 @@ type ProductPopupProps = {
 };
 
 type ProductState = {
-  name: string;
+  title: string;
   description: string;
 };
 
 export default function ProductPopup(props: ProductPopupProps) {
-  const products = useSelector((state: any) => state.ProductsReducer);
+  const products = useSelector((state: any) => state.ProductReducer);
   const dispatch = useDispatch<any>();
 
   //local state
   const [product, setProduct] = useState<ProductState>({
-    name: "",
+    title: "",
     description: "",
   });
+
+  const [isSaveButtonDisabled, setSaveButtonDisabled] = useState(false);
 
   const getProductById = () => {
     return products.filter((product: any, index: number) => {
@@ -42,7 +43,7 @@ export default function ProductPopup(props: ProductPopupProps) {
 
   const handleOnNameChange = (event: any) => {
     let value = event.target.value;
-    setProduct({ ...product, name: value });
+    setProduct({ ...product, title: value });
   };
 
   const handleOnDescriptionChange = (event: any) => {
@@ -50,10 +51,8 @@ export default function ProductPopup(props: ProductPopupProps) {
     setProduct({ ...product, description: value });
   };
 
-  const [isSaveButtonDisabled, setSaveButtonDisabled] = useState(false);
-
   const validator = () => {
-    if (product.name === "" || product.description === "") {
+    if (product.title === "" || product.description === "") {
       setSaveButtonDisabled(true);
     } else {
       setSaveButtonDisabled(false);
@@ -63,14 +62,12 @@ export default function ProductPopup(props: ProductPopupProps) {
     validator();
   }, [product]);
 
-  //email validator regx
-
   const handleOnSubmit = () => {
     props.id
       ? dispatch(
           updateProductRequest(
             props.id,
-            { name: product.name, description: product.description },
+            { name: product.title, description: product.description },
             props.closePopup
           )
         )
@@ -97,14 +94,14 @@ export default function ProductPopup(props: ProductPopupProps) {
           </IconButton>
         </div>
 
-        <Grid container rowSpacing={2} columnSpacing={2}>
+        <Grid container rowSpacing={3} columnSpacing={2}>
           <Grid item xs={12}>
             <TextField
               label="Product Name"
               variant="outlined"
               fullWidth
               name="name"
-              value={product.name}
+              value={product.title}
               onChange={handleOnNameChange}
             />
           </Grid>

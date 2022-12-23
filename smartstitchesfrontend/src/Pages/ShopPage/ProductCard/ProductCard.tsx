@@ -4,20 +4,22 @@ import "./ProductCard.css";
 type ProductCardProps = {
   key: any;
   icon: any;
-  name: string;
+  title: string;
   description: string;
-  price: string;
 };
 
 export default function ProductCard(props: ProductCardProps) {
   return (
-    <div className="product-card-item" id={props.key} >
-      <img className="product-image" src={props.icon} alt={props.name} />
-      <div className="product-card-name-description">
-        <h2>{props.name}</h2>
-        <p>{props.description}</p>
-        <h2>{props.price}</h2>
+    <>
+      <div className="product-card-item">
+        <img className="product-image" src={props.icon} alt={props.title} />
+        <div id={props.key}>
+          <div className="product-card-name-description">
+            <h2>{props.title}</h2>
+            <p>{props.description}</p>
+          </div>
+        </div>{" "}
       </div>
-    </div>
+    </>
   );
 }

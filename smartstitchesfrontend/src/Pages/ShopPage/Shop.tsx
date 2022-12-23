@@ -1,62 +1,49 @@
-import React, { useEffect, useRef, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
-import { getAllProductsRequest } from "../../Store/Thunk/ProductsThunk";
 import "./Shop.css";
+import React, { useState, useEffect } from "react";
 //component
 import ProductCard from "./ProductCard/ProductCard";
 //images
 import itemone from "../../Assets/ProductsImages/productimageone.jpg";
 import itemtwo from "../../Assets/ProductsImages/productimageone.jpg";
+import itemthree from "../../Assets/ProductsImages/productimageone.jpg";
+import itemfour from "../../Assets/ProductsImages/productimageone.jpg";
+import itemfive from "../../Assets/ProductsImages/productimageone.jpg";
+import itemsix from "../../Assets/ProductsImages/productimageone.jpg";
+import itemseven from "../../Assets/ProductsImages/productimageone.jpg";
+
+async function getData() {
+  const response = await fetch("https://fakestoreapi.com/products");
+  const products = await response.json();
+  return products;
+}
 
 export default function SHOP() {
-  const dispatch = useDispatch<any>();
-  const navigate = useNavigate();
-
-  //local state
-  {
-    /*  const [teacherPopup, setTeacherPopup] = useState({
-    isTeacherPopup: false,
-    id: " ",
-  });
-  const [deletePopup, setDeletePopup] = useState({
-    isDeletePopup: false,
-    id: " ",
-    name: " ",
-  });
-*/
-  }
-  //redux state
-  const products = useSelector((state: any) => state.ProductReducer);
-  const loading = useSelector((state: any) => state.LoadingReducer);
-  const { messageText, messageType } = useSelector(
-    (state: any) => state.MessageReducer
-  );
-
+  const [products, setProducts] = useState([]);
   useEffect(() => {
-    // dispatch a thunk
-    products.length <= 0 && dispatch(getAllProducts());
-  }, [dispatch]);
-
-  const products = [];
+    async function fetchData() {
+      const products = await getData();
+      setProducts(products);
+    }
+    fetchData();
+  }, []);
 
   return (
     <>
+      {" "}
       <div className="products-container">
         <div className="our-products-bar">
           <h1 className="shop-title"> SHOP </h1>
         </div>
-        <div className="products-list-container " id="Shop">
+        <div id="Shop" className="products-list-container ">
           {products.length > 0 &&
             products.map((product: any, index: number) => {
               return (
                 <>
                   <ProductCard
-                    key={index}
-                    name={product.name}
-                    description={product.description}
-                    price={product.price}
                     icon={product.icon}
+                    key={index}
+                    title={product.title}
+                    description={product.description}
                   />
                 </>
               );

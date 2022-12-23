@@ -1,24 +1,27 @@
 .product-card-item {
-  scroll-snap-align: start;
+  scroll-snap-align: center;
   background-color: white;
   justify-content: center;
   align-items: center;
   display: flex;
-  padding: 10px;
+  padding: 30px;
   margin-top: 70px;
-  width: 100%;
+  width: 80wh;
+  border: 1px solid #606cb4;
 }
 
 .product-image {
-  display: flex;
-  height: 380px;
-  width: 380px;
+  height: 320px;
+  width: 320px;
   margin: 10px;
+  border: 3px solid #606cb4;
 }
 .product-card-name-description {
   background-color: white;
-  width: 800px;
+  width: 600px;
   height: 380px;
-  padding: 15px;
-  margin: 10px;
+  padding: 10px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
 }

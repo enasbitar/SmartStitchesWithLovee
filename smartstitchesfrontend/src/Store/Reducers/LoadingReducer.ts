@@ -1,6 +1,5 @@
 import {
   SHOW_lOADING,
-  removeLoading,
   REMOVE_LOADING,
 } from "../Actions/LoadingAction";
 

@@ -12,8 +12,8 @@
 .button-container {
   display: flex;
   justify-content: flex-end;
+  margin: 300px;
 }
 .create-button {
-  margin-bottom: 30px !important;
-  margin-right: 30px !important;
+  margin: 300px;
 }

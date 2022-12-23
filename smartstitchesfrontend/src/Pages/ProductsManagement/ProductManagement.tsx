@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import productservice from "../../Services/productservice";
 import { useDispatch, useSelector } from "react-redux";
-import { getAllProductsRequest } from "../../Store/Thunk/ProductsThunk";
+import {
+  getAllProductsRequest,
+  deleteProductRequest,
+} from "../../Store/Thunk/ProductsThunk";
 
 //components
 import ProductPopup from "./ProductPopup/ProductPopup";
@@ -15,6 +18,7 @@ import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 import Loader from "../../Components/Loader/Loader";
 import MessageNotification from "../../Components/MessageNotification/MessageNotification";
+import Header from "../../Components/Header/Header";
 
 function ProductsManagement() {
   const dispatch = useDispatch<any>();
@@ -27,15 +31,16 @@ function ProductsManagement() {
   const [deletePopup, setDeletePopup] = useState({
     isDeletePopup: false,
     id: "",
-    name: "",
+    title: "",
   });
 
   //redux state
-  const products = useSelector((state: any) => state.ProductsReducer);
+  const products = useSelector((state: any) => state.ProductReducer);
   const loading = useSelector((state: any) => state.LoadingReducer);
   const { messageText, messageType } = useSelector(
     (state: any) => state.MessageReducer
   );
+
   console.log("loading", loading);
   console.log("products: ", products);
 
@@ -44,10 +49,10 @@ function ProductsManagement() {
   }, [dispatch]);
 
   const columns: GridColDef[] = [
-    { field: "id", headerName: "ID", flex: 1 },
+    { field: "id", headerName: "ID", flex: 0.2 },
     {
-      field: "name",
-      headerName: "Name",
+      field: "title",
+      headerName: "title",
       flex: 1,
       editable: true,
     },
@@ -60,7 +65,7 @@ function ProductsManagement() {
     {
       field: "Actions",
       headerName: "Actions",
-      flex: 1,
+      flex: 0.3,
       renderCell: (row: any) => {
         return (
           <>
@@ -69,6 +74,7 @@ function ProductsManagement() {
               title="Edit Product"
               onClick={() => {
                 setProductPopup({
+                  ...productPopup,
                   isProductPopup: true,
                   id: row.row.id,
                 });
@@ -83,7 +89,7 @@ function ProductsManagement() {
                 setDeletePopup({
                   isDeletePopup: true,
                   id: row.row.id,
-                  name: row.row.name,
+                  title: row.row.title,
                 })
               }
             >
@@ -97,11 +103,12 @@ function ProductsManagement() {
 
   const closePopup = () => {
     setProductPopup({ isProductPopup: false, id: "" });
-    setDeletePopup({ isDeletePopup: false, id: "", name: "" });
+    setDeletePopup({ isDeletePopup: false, id: "", title: "" });
   };
 
   return (
     <>
+      <Header />
       {loading ? <Loader /> : null}
       {messageText ? (
         <MessageNotification
@@ -116,7 +123,7 @@ function ProductsManagement() {
         <DeletePopup
           closePopup={closePopup}
           id={deletePopup.id}
-          name={deletePopup.name}
+          name={deletePopup.title}
         />
       ) : null}
       <div>
@@ -138,12 +145,12 @@ function ProductsManagement() {
           </Button>
         </div>
 
-        <Box sx={{ height: 400, width: "100%" }}>
+        <Box sx={{ height: 1000, width: "100%" }}>
           <DataGrid
             rows={products}
             columns={columns}
             pageSize={10}
-            rowsPerPageOptions={[10]}
+            rowsPerPageOptions={[30]}
             checkboxSelection
             disableSelectionOnClick
             experimentalFeatures={{ newEditingApi: true }}

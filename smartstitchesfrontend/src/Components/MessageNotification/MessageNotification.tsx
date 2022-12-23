@@ -16,7 +16,6 @@ function MessageNotification(props: MessageNotificationProp) {
   return (
     <>
       {notify(props.messageType, props.messageText)}
-
       <ToastContainer limit={1} pauseOnFocusLoss={false} />
     </>
   );
