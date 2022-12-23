@@ -1,17 +1,11 @@
 .products-list-container {
   background-color: white;
-  width: 100wh;
+  width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-  overflow-y: hidden;
-}
-
-.products-list-container::-webkit-scrollbar {
-  display: grid;
 }
 
 .our-products-bar {
@@ -34,5 +28,12 @@
 }
 
 .products-container {
-  padding: 10px;
+  width: 100wh;
+  overflow-y: auto;
+  scroll-snap-type: mandatory;
+  scroll-behavior: smooth;
+}
+
+.products-container::-webkit-scrollbar {
+  display: none;
 }

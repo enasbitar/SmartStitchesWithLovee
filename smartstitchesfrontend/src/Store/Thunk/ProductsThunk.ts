@@ -1,4 +1,4 @@
-/*
+
 import { error } from "console";
 import productservice from "../../Services/productservice";
 
@@ -38,4 +38,4 @@ export const deleteProductRequest =
       dispatch(removeLoading());
     }
   };
-*/
+
