@@ -1,18 +1,8 @@
-.products-list-container {
-  background-color: white;
-  width: 80%;
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
 .our-products-bar {
   align-items: center;
   text-align: center;
   background-color: #606cb4;
-  height: 120px;
+  height: 100px;
   width: 150px;
   margin: 250px;
   margin-top: 0;
@@ -28,16 +18,25 @@
 }
 
 .products-container {
-  width: 95wh;
-  overflow-y: scroll;
   scroll-behavior: smooth;
-  margin: 40px;
+  margin: 5px;
 }
 
-.products-container::-webkit-scrollbar-track {
+.carrousel {
+  display: grid;
+  grid-auto-flow: column;
+  scroll-behavior: auto;
+  gap: 1.2rem;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.carrousel::-webkit-scrollbar-track {
   background-color: #606cb4;
 }
 
-.products-container::-webkit-scrollbar-thumb:hover {
+.carrousel::-webkit-scrollbar-thumb:hover {
   background-color: #606cb4;
 }

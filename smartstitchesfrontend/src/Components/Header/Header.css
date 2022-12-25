@@ -4,42 +4,43 @@
 }
 .header-menu {
   list-style: none;
-  margin: 30px;
+  margin: 10px;
   padding: 10px;
+  height: 60px;
   border-radius: 5px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   background-color: #606cb4;
   color: white;
-  height: 60px;
   align-items: center;
   text-align: center;
   text-decoration: none !important;
   list-style: none;
-  cursor: pointer;
 }
 
 .header-menu-item-link {
+  color: white;
+  text-decoration: none !important;
   list-style: none;
   display: flex;
   text-align: center;
-  color: white;
-  font-size: 18px;
-  text-decoration: none !important;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 18px;
   height: 40px;
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
-  font-weight: bold;
-  text-align: center;
 }
 
 .header-menu-item-link:hover {
   color: black;
   background-color: white;
-  width: 200px;
-  align-items: center;
   text-align: center;
+  align-items: center;
+  width: 200px;
+  font-size: 18px;
 }

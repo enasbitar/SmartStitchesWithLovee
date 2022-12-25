@@ -1,19 +1,17 @@
 .product-card-item {
   scroll-snap-align: center;
-  background-color: white;
   justify-content: center;
   align-items: center;
   display: flex;
   padding: 30px;
-  margin-top: 70px;
-  width: 80wh;
-  border: 1px solid #606cb4;
+  margin-top: 50px;
+  width: 90wh;
 }
 
 .product-image {
   height: 320px;
-  width: 320px;
-  margin: 10px;
+  width: 300px;
+  margin: 5px;
   border: 3px solid #606cb4;
 }
 .product-card-name-description {
@@ -21,7 +19,7 @@
   width: 600px;
   height: 380px;
   padding: 10px;
-  margin: 30px;
+  margin: 70px;
   display: flex;
   flex-direction: column;
 }

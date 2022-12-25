@@ -1,15 +1,8 @@
 import "./Shop.css";
-import React, { useState, useEffect } from "react";
+import React, { useCallback, useState, useEffect } from "react";
 //component
 import ProductCard from "./ProductCard/ProductCard";
-//images
-import itemone from "../../Assets/ProductsImages/productimageone.jpg";
-import itemtwo from "../../Assets/ProductsImages/productimageone.jpg";
-import itemthree from "../../Assets/ProductsImages/productimageone.jpg";
-import itemfour from "../../Assets/ProductsImages/productimageone.jpg";
-import itemfive from "../../Assets/ProductsImages/productimageone.jpg";
-import itemsix from "../../Assets/ProductsImages/productimageone.jpg";
-import itemseven from "../../Assets/ProductsImages/productimageone.jpg";
+import Carousel from "react-material-ui-carousel";
 
 async function getData() {
   const response = await fetch("https://fakestoreapi.com/products");
@@ -26,28 +19,61 @@ export default function SHOP() {
     }
     fetchData();
   }, []);
+  //
+  const [activeChild, setActiveChild] = useState(0);
 
+  const changeChild = useCallback(
+    (e: KeyboardEvent) => {
+      if (e.key === "ArrowLeft") {
+        setActiveChild((a) => (a - 1 < 0 ? products.length - 1 : a - 1));
+        console.log("hi");
+      } else if (e.key === "ArrowRight") {
+        setActiveChild((a) => (a + 1 > products.length - 1 ? 0 : a + 1));
+
+        console.log("heloo");
+      }
+    },
+    [products]
+  );
+  useEffect(() => {
+    document.addEventListener("keydown", changeChild);
+
+    return function cleanup() {
+      document.removeEventListener("keydown", changeChild);
+    };
+  });
+
+  //
   return (
     <>
       {" "}
+      <div className="our-products-bar">
+        <h1 className="shop-title"> SHOP </h1>
+      </div>{" "}
       <div className="products-container">
-        <div className="our-products-bar">
-          <h1 className="shop-title"> SHOP </h1>
-        </div>
-        <div id="Shop" className="products-list-container ">
-          {products.length > 0 &&
-            products.map((product: any, index: number) => {
-              return (
-                <>
-                  <ProductCard
-                    icon={product.icon}
-                    key={index}
-                    title={product.title}
-                    description={product.description}
-                  />
-                </>
-              );
-            })}
+        <div>
+          <div id="Shop" className="carrousel ">
+            <Carousel
+              index={activeChild}
+              autoPlay={false}
+              navButtonsAlwaysVisible
+            >
+              {products.map((product: any, index: number) => {
+                return (
+                  <>
+                    <div>
+                      <ProductCard
+                        icon={product.icon}
+                        key={index}
+                        title={product.title}
+                        description={product.description}
+                      />
+                    </div>
+                  </>
+                );
+              })}
+            </Carousel>
+          </div>
         </div>
       </div>
     </>

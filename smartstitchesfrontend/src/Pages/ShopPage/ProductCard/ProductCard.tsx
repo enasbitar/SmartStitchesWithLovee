@@ -3,11 +3,13 @@ import "./ProductCard.css";
 
 type ProductCardProps = {
   key: any;
-  icon: any;
+  icon: string;
   title: string;
   description: string;
 };
+//
 
+//
 export default function ProductCard(props: ProductCardProps) {
   return (
     <>
