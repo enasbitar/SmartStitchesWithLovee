@@ -5,7 +5,11 @@ import bodybarbackground from "../../Assets/BackgroundImages/contactus.jpeg";
 function BodyBar() {
   return (
     <div className="body-bar-container">
-      <img className="body-bar-background" src={bodybarbackground} alt="Logo" />
+      <img
+        className="body-bar-background"
+        src={bodybarbackground}
+        alt="bodybarbackground"
+      />
       <div className="body-bar-elements-container">
         <HashLink className="body-bar-elements" to="/#contact-us">
           CONTACT US

@@ -52,8 +52,14 @@ function Banner() {
         THE ORDERS WON'T BE READY BEFORE 20 WORKING DAYS
       </h3>
       <div className="search-box-and-logo">
-        <label className="search-box">
-          <input type="text" name="name" ref={inputRef} onInput={handleInput} />{" "}
+        <label>
+          <input
+            className="search-box"
+            type="text"
+            name="name"
+            ref={inputRef}
+            onInput={handleInput}
+          />{" "}
           <div>
             {filteredElements.map((element) => (
               <div key={element.title}>{element.title}</div>

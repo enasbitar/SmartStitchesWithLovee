@@ -11,7 +11,7 @@ import BodyBar from "../../Pages/BodyBar/BodyBar";
 
 function HomePage() {
   return (
-    <div>
+    <div className="homepage">
       <Banner />
       <Header />
       <WhySmartStitches />

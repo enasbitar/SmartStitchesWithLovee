@@ -1,7 +1,6 @@
 import React from "react";
 import "./ContactUs.css";
 import contactusbackground from "../../Assets/BackgroundImages/bodybarbackground.jpg";
-
 function ContactUs() {
   return (
     <div id="contact-us" className="contact-us-container">
