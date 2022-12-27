@@ -30,3 +30,11 @@ code {
   text-align: center;
   font-size: 60px;
 }
+
+.hidden {
+  display: none;
+}
+
+.MuiButtonBase-root {
+  display: flex;
+}

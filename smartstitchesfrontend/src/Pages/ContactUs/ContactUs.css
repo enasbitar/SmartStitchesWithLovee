@@ -1,6 +1,6 @@
 .contact-us-container {
   height: 100vh;
-  width: 90vw;
+  width: 100%;
   display: flex;
   flex-direction: row;
   position: relative;
@@ -13,21 +13,25 @@
   height: 80vh;
 }
 .contact-us-bar {
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
   background-color: #606cb4;
-  height: 120px;
-  width: 150px;
-  margin: 250px;
+  height: 140px;
+  width: 180px;
+  margin: 22%;
   margin-top: 0;
-  padding: 20px;
+  padding: 22px;
   position: absolute;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-us-title {
-  margin-top: 100px;
+  margin-top: 90px;
   color: white;
-  font-size: 24px;
+  font-size: 22px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
