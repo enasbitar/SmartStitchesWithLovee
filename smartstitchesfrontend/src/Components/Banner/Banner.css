@@ -33,7 +33,44 @@
   font-size: 25px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 1200px) {
+  .banner-container {
+    width: 95vw;
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .banner-smart-stitches-logo {
+    height: 100px;
+  }
+
+  .search-box-and-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+  }
+  .search-bar-logo {
+    height: 50px;
+  }
+
+  .search-box {
+    display: flex;
+  }
+
+  .banner-declaration {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: #606cb4;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 380px) {
   .banner-container {
     display: flex;
     width: 90%;
@@ -45,6 +82,302 @@
   }
   .banner-smart-stitches-logo {
     height: 20px;
+  }
+
+  .banner-declaration {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: #606cb4;
+    font-size: 5px;
+    text-align: center;
+  }
+
+  .search-box-and-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1px;
+    padding: 1px;
+  }
+
+  .search-box {
+    width: 5px;
+  }
+  .search-bar-logo {
+    height: 20px;
+  }
+}
+
+@media (max-width: 414px) {
+  .banner-container {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 2px;
+    margin-left: 14px;
+  }
+  .banner-smart-stitches-logo {
+    height: 20px;
+  }
+
+  .banner-declaration {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: #606cb4;
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .search-box-and-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1px;
+    padding: 1px;
+  }
+
+  .search-box {
+    width: 50px;
+  }
+  .search-bar-logo {
+    height: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .banner-container {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 2px;
+    margin-left: 14px;
+  }
+  .banner-smart-stitches-logo {
+    height: 20px;
+  }
+
+  .banner-declaration {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: #606cb4;
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .search-box-and-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1px;
+    padding: 1px;
+  }
+
+  .search-box {
+    width: 50px;
+  }
+  .search-bar-logo {
+    height: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .banner-container {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 2px;
+    margin-left: 14px;
+  }
+  .banner-smart-stitches-logo {
+    height: 20px;
+  }
+
+  .banner-declaration {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: #606cb4;
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .search-box-and-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1px;
+    padding: 1px;
+  }
+
+  .search-box {
+    width: 50px;
+  }
+  .search-bar-logo {
+    height: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .banner-container {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 2px;
+    margin-left: 14px;
+  }
+  .banner-smart-stitches-logo {
+    height: 20px;
+  }
+
+  .banner-declaration {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: #606cb4;
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .search-box-and-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1px;
+    padding: 1px;
+  }
+
+  .search-box {
+    width: 50px;
+  }
+  .search-bar-logo {
+    height: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .banner-container {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 2px;
+    margin-left: 14px;
+  }
+  .banner-smart-stitches-logo {
+    height: 60px;
+  }
+
+  .banner-declaration {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: #606cb4;
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .search-box-and-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1px;
+    padding: 1px;
+  }
+
+  .search-box {
+    width: 80px;
+  }
+  .search-bar-logo {
+    height: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .banner-container {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 2px;
+    margin-left: 14px;
+  }
+  .banner-smart-stitches-logo {
+    height: 60px;
+  }
+
+  .banner-declaration {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: #606cb4;
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .search-box-and-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1px;
+    padding: 1px;
+  }
+
+  .search-box {
+    width: 80px;
+  }
+  .search-bar-logo {
+    height: 20px;
+  }
+}
+
+@media (max-width: 850px) {
+  .banner-container {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 2px;
+    margin-left: 14px;
+  }
+  .banner-smart-stitches-logo {
+    height: 60px;
+  }
+
+  .banner-declaration {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: #606cb4;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .search-box-and-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1px;
+    padding: 1px;
+  }
+
+  .search-box {
+    width: 80px;
+  }
+  .search-bar-logo {
+    height: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .banner-container {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 2px;
+    margin-left: 14px;
+  }
+  .banner-smart-stitches-logo {
+    height: 30px;
   }
 
   .banner-declaration {
