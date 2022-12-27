@@ -186,7 +186,7 @@
   .body-bar-container {
     display: flex;
     height: 40vh;
-    width: 99%;
+    width: 100%;
     align-items: center;
     overflow: hidden;
   }
@@ -232,7 +232,7 @@
   .body-bar-container {
     display: flex;
     height: 40vh;
-    width: 99%;
+    width: 100%;
     align-items: center;
     overflow: hidden;
   }
@@ -278,7 +278,7 @@
   .body-bar-container {
     display: flex;
     height: 60vh;
-    width: 99%;
+    width: 100%;
     align-items: center;
     overflow: hidden;
   }
@@ -324,7 +324,7 @@
   .body-bar-container {
     display: flex;
     height: 60vh;
-    width: 99%;
+    width: 100%;
     align-items: center;
     overflow: hidden;
   }
@@ -370,7 +370,7 @@
   .body-bar-container {
     display: flex;
     height: 60vh;
-    width: 99%;
+    width: 100%;
     align-items: center;
     overflow: hidden;
   }
@@ -416,13 +416,13 @@
   .body-bar-container {
     display: flex;
     height: 35vh;
-    width: 99%;
+    width: 100%;
     align-items: center;
     overflow: hidden;
   }
 
   .body-bar-background {
-    width: 99%;
+    width: 100%;
   }
 
   .body-bar-elements-container {
@@ -462,13 +462,13 @@
   .body-bar-container {
     display: flex;
     height: 30vh;
-    width: 99%;
+    width: 100%;
     align-items: center;
     overflow: hidden;
   }
 
   .body-bar-background {
-    width: 99%;
+    width: 100%;
   }
 
   .body-bar-elements-container {
@@ -508,13 +508,13 @@
   .body-bar-container {
     display: flex;
     height: 30vh;
-    width: 99%;
+    width: 100%;
     align-items: center;
     overflow: hidden;
   }
 
   .body-bar-background {
-    width: 99%;
+    width: 100%;
   }
 
   .body-bar-elements-container {
@@ -554,13 +554,13 @@
   .body-bar-container {
     display: flex;
     height: 44vh;
-    width: 99%;
+    width: 100%;
     align-items: center;
     overflow: hidden;
   }
 
   .body-bar-background {
-    width: 99%;
+    width: 100%;
   }
 
   .body-bar-elements-container {
@@ -600,13 +600,13 @@
   .body-bar-container {
     display: flex;
     height: 42vh;
-    width: 99%;
+    width: 100%;
     align-items: center;
     overflow: hidden;
   }
 
   .body-bar-background {
-    width: 99%;
+    width: 100%;
   }
 
   .body-bar-elements-container {
@@ -646,13 +646,13 @@
   .body-bar-container {
     display: flex;
     height: 40vh;
-    width: 99%;
+    width: 100%;
     align-items: center;
     overflow: hidden;
   }
 
   .body-bar-background {
-    width: 99%;
+    width: 100%;
   }
 
   .body-bar-elements-container {
@@ -692,13 +692,13 @@
   .body-bar-container {
     display: flex;
     height: 27vh;
-    width: 99%;
+    width: 100%;
     align-items: center;
     overflow: hidden;
   }
 
   .body-bar-background {
-    width: 99%;
+    width: 100%;
   }
 
   .body-bar-elements-container {
