@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import smartstitcheslogo from "../../Assets/BannerImages/Logo.png";
 import searchbarlogo from "../../Assets/BannerImages/searchbaricon.png";
 import products from "../../Pages/ShopPage/Shop";
+import LoginButton from "../LoginPopup/LoginPopup";
 
 interface APIResponse {
   elements: Element[];
@@ -49,13 +50,26 @@ function Banner() {
     );
     setFilteredElements(filtered);
   }
+
+  const [LoginButton, setLoginButton] = useState({
+    isLoginButton: false,
+    username: "",
+    password: "",
+  });
+
   return (
     <div className="banner-container">
       <img
         className="banner-smart-stitches-logo"
         src={smartstitcheslogo}
         alt="Logo"
-        onClick={() => navigate("/products-management")}
+        onClick={() => {
+          setLoginButton({
+            ...LoginButton,
+            isLoginButton: true,
+          });
+          navigate("/products-management");
+        }}
       />
 
       <h3 className="banner-declaration">
