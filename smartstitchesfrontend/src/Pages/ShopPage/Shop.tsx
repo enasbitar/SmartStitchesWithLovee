@@ -29,7 +29,6 @@ export default function SHOP() {
         console.log("hi");
       } else if (e.key === "ArrowRight") {
         setActiveChild((a) => (a + 1 > products.length - 1 ? 0 : a + 1));
-
         console.log("heloo");
       }
     },
@@ -54,6 +53,7 @@ export default function SHOP() {
         <div>
           <div id="Shop" className="carrousel ">
             <Carousel
+              className="scrolling-wrapper"
               index={activeChild}
               autoPlay={false}
               navButtonsAlwaysVisible

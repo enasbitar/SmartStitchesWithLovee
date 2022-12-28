@@ -6,11 +6,12 @@ function WhySmartStitches() {
   return (
     <div id="why-smart-stitches" className="why-smart-stitches-container">
       <div>
-        <h1 className="about-us-quote">
+        <h2 className="about-us-quote">
           “Don’t find customers for your products, find products for your
           customers.”
-        </h1>
-        <h1 className="about-us-author-name">Seth Godin</h1>
+          <h5>Seth Godin </h5>
+        </h2>
+
         <h2 className="about-us-goals-container">
           <ol>
             <li className="about-us-goals">
