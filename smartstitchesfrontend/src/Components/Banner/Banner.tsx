@@ -14,15 +14,6 @@ interface Element {
   title: string;
 }
 
-/*
-function Found() {
-  const [products, setProducts] = useState("");
-  const handelProductChange = (event: ChangeEvent<HTMLInputElement>) => {
-    console.log("haha");
-  };
-  return <input onChange={handelProductChange} value={products} />;
-}
-*/
 function Banner() {
   const navigate = useNavigate();
   const inputRef = useRef<HTMLInputElement>(null);

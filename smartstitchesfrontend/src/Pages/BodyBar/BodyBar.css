@@ -733,3 +733,49 @@
     color: #606cb4;
   }
 }
+
+@media (max-width: 412px) {
+  .body-bar-container {
+    display: flex;
+    height: 30vh;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .body-bar-background {
+    width: 100%;
+  }
+
+  .body-bar-elements-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    flex-direction: column;
+    width: 90vw;
+  }
+
+  .body-bar-elements {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: #606cb4;
+    list-style: none;
+    text-decoration: none !important;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    width: 50%;
+    height: 30%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 10px;
+  }
+
+  .body-bar-elements:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #606cb4;
+  }
+}

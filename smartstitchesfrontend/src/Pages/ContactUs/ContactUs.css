@@ -629,7 +629,7 @@
     align-items: center;
     text-align: center;
     background-color: #606cb4;
-    height: 130px;
+    height: 150px;
     width: 150px;
     margin: 15%;
     margin-top: 0;
@@ -648,6 +648,7 @@
     cursor: pointer;
     font-size: 25px;
     margin-top: 50px;
+    margin-left: 30%;
     color: #606cb4;
     text-decoration: none;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -673,7 +674,7 @@
     align-items: center;
     text-align: center;
     background-color: #606cb4;
-    height: 130px;
+    height: 150px;
     width: 150px;
     margin: 15%;
     margin-top: 0;
@@ -690,6 +691,7 @@
 
   .email-to-smart-stitches {
     cursor: pointer;
+    margin-left: 30%;
     font-size: 17px;
     margin-top: 50px;
     color: #606cb4;
@@ -735,6 +737,51 @@
   .email-to-smart-stitches {
     cursor: pointer;
     font-size: 8px;
+    margin-top: 50px;
+    color: #606cb4;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+}
+
+@media (max-width: 412px) {
+  .contact-us-container {
+    height: 60vh;
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .contact-us-image {
+    margin-left: auto;
+    margin-top: auto;
+    height: 30%;
+  }
+  .contact-us-bar {
+    align-items: center;
+    text-align: center;
+    background-color: #606cb4;
+    height: 150px;
+    width: 150px;
+    margin: 15%;
+    margin-top: 0;
+    padding: 20px;
+    position: absolute;
+  }
+
+  .contact-us-title {
+    margin-top: 100px;
+    color: white;
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+
+  .email-to-smart-stitches {
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 20%;
     margin-top: 50px;
     color: #606cb4;
     text-decoration: none;

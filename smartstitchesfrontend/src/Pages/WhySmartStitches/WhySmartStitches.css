@@ -1,6 +1,6 @@
-* {
+/* {
   border: 1px solid red;
-}
+}*/
 
 .why-smart-stitches-container {
   display: flex;
@@ -718,7 +718,7 @@
   .why-smart-stitches-container {
     margin-top: 0px;
     width: 96vw;
-    height: 40vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
