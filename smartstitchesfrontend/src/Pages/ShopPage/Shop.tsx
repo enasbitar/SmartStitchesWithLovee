@@ -3,6 +3,7 @@ import React, { useCallback, useState, useEffect } from "react";
 //component
 import ProductCard from "./ProductCard/ProductCard";
 import Carousel from "react-material-ui-carousel";
+import handleSearchChange from "../../Components/Banner/Banner";
 
 async function getData() {
   const response = await fetch("https://fakestoreapi.com/products");
@@ -30,7 +31,7 @@ export default function SHOP() {
       } else if (e.key === "ArrowRight") {
         setActiveChild((a) => (a + 1 > products.length - 1 ? 0 : a + 1));
 
-        console.log("heloo");
+        console.log("helloo");
       }
     },
     [products]
