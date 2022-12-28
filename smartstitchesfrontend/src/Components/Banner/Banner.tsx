@@ -43,12 +43,11 @@ function Banner() {
     let value = event.target.value;
     let newArray = [] as any;
 
-    const searched_products = dataElement.find((product: any, index: any ) => {
+    const searched_products = dataElement.find((product: any, index: any) => {
       if (product.name.toLowerCase().includes(value.toLowerCase())) {
         newArray.push(product(index));
       }
     });
-    console.log(newArray);
     return newArray;
   };
 
