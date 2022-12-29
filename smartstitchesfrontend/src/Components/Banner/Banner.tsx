@@ -23,20 +23,6 @@ function Banner() {
     setLogInPopup(false);
   };
 
-  const handleSearchChange = (event: any) => {
-    let value = event.target.value;
-
-    let newArray: any = [];
-    products.find((e, index) => {
-      if (e.name.toLowerCase().includes(value.toLowerCase())) {
-        newArray.push(products[index]);
-      }
-    });
-    console.log("newArray: ", newArray);
-
-    setTempProducts(newArray);
-  };
-
   return (
     <>
       {console.log("meassge", isLogInPopup)}
@@ -57,12 +43,7 @@ function Banner() {
         </h3>
         <div className="search-box-and-logo">
           <label>
-            <input
-              className="search-box"
-              type="text"
-              name="name"
-              onInput={handleSearchChange}
-            />
+            <input className="search-box" type="text" name="name" />
           </label>
           <img className="search-bar-logo" src={searchbarlogo} alt="Logo" />
         </div>
