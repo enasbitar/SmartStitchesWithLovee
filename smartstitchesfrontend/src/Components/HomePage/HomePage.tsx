@@ -1,6 +1,5 @@
 import React from "react";
 import "./HomePage.css";
-
 import Banner from "../Banner/Banner";
 import Header from "../Header/Header";
 import WhySmartStitches from "../../Pages/WhySmartStitches/WhySmartStitches";

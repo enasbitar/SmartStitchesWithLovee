@@ -4,33 +4,19 @@ import React, { useCallback, useState, useEffect } from "react";
 import ProductCard from "./ProductCard/ProductCard";
 import Carousel from "react-material-ui-carousel";
 import handleSearchChange from "../../Components/Banner/Banner";
-import { getAllProductsRequest } from "../../Store/Thunk/ProductsThunk";
-import ProductsService from "../../Services/productservice";
 
-// type Props = {
-//   dispatch: (arg0: any) => void;
-// };
-// const arr = Object.entries(products);
+async function getData() {
+  const response = await fetch("https://fakestoreapi.com/products");
+  const products = await response.json();
+  return products;
+}
 
-// const arr = Object.keys(products).map((key) => [key, products[key]]);
-// const arr = [];
-// for (const key in products) {
-//   arr.push([key, products[key]]);
-// };
-function dispatch(arg0: (dispatch: any) => void) {}
-export var products = []
 export default function SHOP() {
-  useEffect(() => {
-    products.length <= 0 && dispatch(getAllProductsRequest());
-  }, [dispatch]);
-  console.log(dispatch);
-
   const [products, setProducts] = useState([]);
   useEffect(() => {
     async function fetchData() {
-      var productsData = getAllProductsRequest();
-      console.log(productsData);
-      // setProducts(productsData);
+      const products = await getData();
+      setProducts(products);
     }
     fetchData();
   }, []);
@@ -41,11 +27,11 @@ export default function SHOP() {
     (e: KeyboardEvent) => {
       if (e.key === "ArrowLeft") {
         setActiveChild((a) => (a - 1 < 0 ? products.length - 1 : a - 1));
-        console.log("pi");
+        console.log("hi");
       } else if (e.key === "ArrowRight") {
         setActiveChild((a) => (a + 1 > products.length - 1 ? 0 : a + 1));
 
-        console.log("fii");
+        console.log("helloo");
       }
     },
     [products]
