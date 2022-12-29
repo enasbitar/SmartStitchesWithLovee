@@ -1,57 +1,115 @@
 import React from "react";
+import "./LoginPopup.css";
+import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { Button, Grid, IconButton, TextField, Typography } from "@mui/material";
+import CloseIcon from "@mui/icons-material/Close";
+import Box from "@mui/material/Box";
+import EditIcon from "@mui/icons-material/Edit";
+import { getAllProductsRequest } from "../../Store/Thunk/ProductsThunk";
+import { getAllUsersRequest } from "../../Store/Thunk/UsersThunks";
 
-type LoginButtonProp = {
-  username: string;
-  password: string;
+type LogInProps = {
   closePopup: any;
 };
 
-const LoginButton: React.FunctionComponent<{}> = (props) => {
-  const [username, setUsername] = React.useState("");
-  const [password, setPassword] = React.useState("");
-  const [error, setError] = React.useState("");
+function LogInPopup(props: LogInProps) {
+  const navigate = useNavigate();
+  const dispatch = useDispatch<any>();
+  const users = useSelector((state: any) => state.UsersReducer);
 
-  const handleLogin = async () => {
-    try {
-      const response = await fetch("https://fakestoreapi.com/products/1", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          username,
-          password,
-        }),
-      });
-      const data = await response.json();
-      if (data.success) {
-        // login successful, do something here (e.g., redirect to another page)
+  console.log("users", users);
+  useEffect(() => {
+    users.length <= 0 && dispatch(getAllUsersRequest());
+  }, [dispatch]);
+
+  const [isSaveButtonDisabled, setSaveButtonDisabled] = useState(true);
+
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleOnSubmit = () => {
+    console.log("username", username);
+    console.log("password", password);
+
+    const userData = users.find((user: any) => user.username === username);
+
+    if (userData.length == 0) {
+      setSaveButtonDisabled(true);
+      alert("Invalid Username");
+    } else {
+      if (userData.password != password) {
+        alert("Wrong Password!");
       } else {
-        setError(data.error);
+        props.closePopup();
+        setSaveButtonDisabled(false);
+        navigate("./products-management");
       }
-    } catch (err) {
-      setError("An error occurred. Please try again.");
     }
+
+    setUsername("");
+    setPassword("");
   };
 
   return (
-    <>
-      <input
-        type="text"
-        placeholder="Username"
-        value={username}
-        onChange={(event) => setUsername(event.target.value)}
-      />
-      <input
-        type="password"
-        placeholder="Password"
-        value={password}
-        onChange={(event) => setPassword(event.target.value)}
-      />
-      <button onClick={handleLogin}>Login</button>
-      {error && <p>{error}</p>}
-    </>
-  );
-};
+    <div>
+      {/* Overlay */}
+      <div onClick={props.closePopup} className="login-popup-overlay"></div>
 
-export default LoginButton;
+      <div className="user-popup-content">
+        <div className="user-popup-header">
+          <Typography variant="h3" fontWeight="bold" color="primary">
+            Log in
+          </Typography>
+          <IconButton
+            size="large"
+            title="close icon"
+            color="error"
+            onClick={props.closePopup}
+          >
+            <CloseIcon />
+          </IconButton>
+        </div>
+
+        <Grid container rowSpacing={2} columnSpacing={2}>
+          <Grid item xs={12}>
+            <TextField
+              label="Username"
+              variant="outlined"
+              fullWidth
+              name="username"
+              value={username}
+              onChange={(event) => setUsername(event.target.value)}
+            />
+          </Grid>
+
+          <Grid item xs={12}>
+            <TextField
+              label="Password"
+              variant="outlined"
+              fullWidth
+              name="password"
+              value={password}
+              onChange={(event) => setPassword(event.target.value)}
+            />
+          </Grid>
+
+          <Grid xs={12} className="save-button-container">
+            <Button
+              color="primary"
+              variant="contained"
+              type="submit"
+              onClick={handleOnSubmit}
+              //disabled={isSaveButtonDisabled}
+            >
+              Save
+            </Button>
+          </Grid>
+        </Grid>
+      </div>
+    </div>
+  );
+}
+
+export default LogInPopup;

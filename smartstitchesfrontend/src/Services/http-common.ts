@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const httpCommon = axios.create({
   baseURL: "https://fakestoreapi.com/",
-   headers: {
+  headers: {
     "Content-type": "application/json",
   },
 });
