@@ -246,6 +246,7 @@
   .header-menu {
     list-style: none;
     margin: 5px;
+    margin-left: 5%;
     padding: 1px;
     height: 70px;
     border-radius: 5px;

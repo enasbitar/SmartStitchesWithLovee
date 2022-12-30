@@ -4,23 +4,25 @@ import React, { useCallback, useState, useEffect } from "react";
 import ProductCard from "./ProductCard/ProductCard";
 import Carousel from "react-material-ui-carousel";
 import handleSearchChange from "../../Components/Banner/Banner";
-
-async function getData() {
+import data from "../../Helpers/jsonAPI.json";
+/*async function getData() {
   const response = await fetch("https://fakestoreapi.com/products");
   const products = await response.json();
   return products;
-}
+}*/
 
 export default function SHOP() {
-  const [products, setProducts] = useState([]);
-  useEffect(() => {
+  /*const [products, setProducts] = useState([]);
+ useEffect(() => {
     async function fetchData() {
       const products = await getData();
       setProducts(products);
     }
     fetchData();
-  }, []);
+  }, []);*/
   //
+  const products = data["products"];
+
   const [activeChild, setActiveChild] = useState(0);
 
   const changeChild = useCallback(
