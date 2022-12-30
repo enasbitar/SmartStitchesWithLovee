@@ -1,3 +1,4 @@
+@import url("https://github.com/enasbitar/SmartStitchesWithLovee/blob/main/smartstitchesfrontend/src/Assets/FontTypes/Sevillana-Regular.ttf");
 * {
   /* border: 1px solid red; */
   box-sizing: border-box;
@@ -16,6 +17,7 @@ body {
   align-items: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    "Sevillana-Regular", "ALEX BRUSH REGULAR", "Pantherdam Signature" Italic,
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -37,4 +39,9 @@ code {
 
 .MuiButtonBase-root {
   display: flex;
+}
+
+@font-face {
+  font-family: "Sevillana-Regular";
+  src: url("https://github.com/enasbitar/SmartStitchesWithLovee/blob/main/smartstitchesfrontend/src/Assets/FontTypes/Sevillana-Regular.ttf");
 }

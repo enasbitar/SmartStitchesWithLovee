@@ -65,10 +65,12 @@ export default function SHOP() {
                   <>
                     <div>
                       <ProductCard
-                        icon={product.icon}
+                        image={product.image}
                         key={index}
                         title={product.title}
                         description={product.description}
+                        category={product.category}
+                        price={product.price}
                       />
                     </div>
                   </>

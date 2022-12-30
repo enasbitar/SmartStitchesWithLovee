@@ -9,13 +9,13 @@ function WhySmartStitches() {
         <h2 className="about-us-quote">
           “Don’t find customers for your products, find products for your
           customers.”
-          <h5>Seth Godin </h5>
+          <h5 className="about-us-author-name">Seth Godin </h5>
         </h2>
 
         <h2 className="about-us-goals-container">
           <ol>
             <li className="about-us-goals">
-              We are at your service for any customized hand made gift.
+              We are at your service for any customized handmade gift.
             </li>
             <li className="about-us-goals">
               We always work with love, to keep our customers satisfied.

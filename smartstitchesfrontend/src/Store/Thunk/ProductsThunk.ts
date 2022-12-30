@@ -8,6 +8,7 @@ import {
   updateProductSuccess,
 } from "../Actions/ProductsAction";
 
+
 export const getAllProductsRequest = () => (dispatch: any) => {
   try {
     dispatch(setLoading());
