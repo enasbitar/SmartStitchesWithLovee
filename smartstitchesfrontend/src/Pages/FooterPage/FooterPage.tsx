@@ -20,7 +20,7 @@ function FooterPage() {
             src={smartstitcheslogo}
             alt="Logo"
           />
-          <h3 className="footer-quote">HAND MADE WITH LOVE</h3>
+          <h3 className="footer-quote">Hand made with Love</h3>
         </div>
       </div>
     </div>

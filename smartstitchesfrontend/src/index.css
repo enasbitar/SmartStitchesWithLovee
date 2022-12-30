@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 @import url("https://github.com/enasbitar/SmartStitchesWithLovee/blob/main/smartstitchesfrontend/src/Assets/FontTypes/Sevillana-Regular.ttf");
 * {
   /* border: 1px solid red; */
@@ -17,8 +20,8 @@ body {
   align-items: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    "Sevillana-Regular", "ALEX BRUSH REGULAR", "Pantherdam Signature" Italic,
-    sans-serif;
+    "Dancing Script", cursive, "Sevillana-Regular", "ALEX BRUSH REGULAR",
+    "Pantherdam Signature" Italic, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

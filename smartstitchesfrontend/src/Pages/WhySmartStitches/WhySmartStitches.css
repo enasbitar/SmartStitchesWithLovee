@@ -18,7 +18,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Dancing Script", cursive;
 }
 
 .about-us-author-name {
@@ -29,6 +29,7 @@
 
 .about-us-goals-container {
   margin-top: 100px;
+  margin-left: 4%;
 }
 .about-us-goals {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -37,7 +38,7 @@
 }
 
 .thank-you-note {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Dancing Script", cursive;
   color: #606cb4;
   display: flex;
   flex-direction: column;
@@ -53,6 +54,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-left: 4%;
 }
 
 @media (max-width: 1200px) {
@@ -73,7 +75,7 @@
   }
 
   .thank-you-note {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "Dancing Script", cursive;
     color: #606cb4;
     font-size: 20px;
   }
@@ -109,7 +111,7 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "Dancing Script", cursive;
   }
 
   .about-us-goals-container {
@@ -122,7 +124,7 @@
   }
 
   .thank-you-note {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "Dancing Script", cursive;
     color: #606cb4;
     width: 80vw;
     font-size: 28px;
@@ -163,7 +165,7 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "Dancing Script", cursive;
   }
 
   .about-us-author-name {
@@ -185,7 +187,7 @@
   }
 
   .thank-you-note {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "Dancing Script", cursive;
     color: #606cb4;
     display: flex;
     width: 70vw;
@@ -230,7 +232,7 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "Dancing Script", cursive;
   }
 
   .about-us-goals-container {
@@ -246,7 +248,7 @@
   .thank-you-note {
     display: flex;
     flex-direction: column;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "Dancing Script", cursive;
     color: #606cb4;
     width: 50vw;
     font-size: 27px;
@@ -279,14 +281,13 @@
   .about-us-quote {
     width: 90%;
     margin: 4px;
-
     margin-top: 20px;
     font-size: 30px;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "Dancing Script", cursive;
   }
 
   .about-us-author-name {
@@ -314,7 +315,7 @@
   }
 
   .thank-you-note {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "Dancing Script", cursive;
     color: #606cb4;
     display: flex;
     font-size: 25px;
@@ -358,7 +359,7 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "Dancing Script", cursive;
   }
 
   .about-us-author-name {
@@ -380,7 +381,7 @@
   }
 
   .thank-you-note {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "Dancing Script", cursive;
     color: #606cb4;
     display: flex;
     font-size: 13px;
@@ -423,7 +424,7 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "Dancing Script", cursive;
   }
 
   .about-us-author-name {
@@ -447,7 +448,7 @@
   }
 
   .thank-you-note {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "Dancing Script", cursive;
     color: #606cb4;
     display: flex;
     font-size: 24px;
@@ -492,7 +493,7 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "Dancing Script", cursive;
   }
 
   .about-us-goals-container {
@@ -505,7 +506,7 @@
   }
 
   .thank-you-note {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "Dancing Script", cursive;
     color: #606cb4;
     width: 70vw;
     font-size: 17px;
@@ -547,7 +548,7 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "Dancing Script", cursive;
   }
 
   .about-us-author-name {
@@ -569,7 +570,7 @@
   }
 
   .thank-you-note {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "Dancing Script", cursive;
     color: #606cb4;
     display: flex;
     font-size: 13px;
@@ -613,7 +614,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "Dancing Script", cursive;
   }
 
   .about-us-author-name {
@@ -634,7 +635,7 @@
   }
 
   .thank-you-note {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "Dancing Script", cursive;
     color: #606cb4;
     display: flex;
     font-size: 13px;
@@ -679,7 +680,7 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "Dancing Script", cursive;
   }
 
   .about-us-goals-container {
@@ -694,7 +695,7 @@
   .thank-you-note {
     margin-top: 30px;
     margin-left: 20%;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "Dancing Script", cursive;
     color: #606cb4;
     width: 80vw;
     font-size: 15px;
@@ -733,7 +734,7 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "Dancing Script", cursive;
   }
 
   .about-us-author-name {
@@ -755,7 +756,7 @@
   }
 
   .thank-you-note {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "Dancing Script", cursive;
     color: #606cb4;
     width: 80vw;
     font-size: 16px;
@@ -795,7 +796,7 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "Dancing Script", cursive;
   }
 
   .about-us-author-name {
@@ -817,7 +818,7 @@
   }
 
   .thank-you-note {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "Dancing Script", cursive;
     color: #606cb4;
     width: 80vw;
     font-size: 16px;
@@ -859,7 +860,7 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "Dancing Script", cursive;
   }
 
   .about-us-goals-container {
@@ -872,7 +873,7 @@
   }
 
   .thank-you-note {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "Dancing Script", cursive;
     color: #606cb4;
     width: 70vw;
     font-size: 17px;
@@ -915,7 +916,7 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "Dancing Script", cursive;
   }
 
   .about-us-goals-container {
@@ -928,7 +929,7 @@
   }
 
   .thank-you-note {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "Dancing Script", cursive;
     color: #606cb4;
     width: 70vw;
     font-size: 17px;

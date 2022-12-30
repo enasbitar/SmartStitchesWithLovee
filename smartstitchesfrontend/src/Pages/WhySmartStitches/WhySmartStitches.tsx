@@ -25,7 +25,7 @@ function WhySmartStitches() {
         </h2>
         <div className="thankyou-whysmartstitchesicon">
           <h1 className="thank-you-note">
-            THANK YOU FOR CHOOSING SMART STITCHES WITH LOVE
+            Thank you for choosing Smart Stitches With Love
           </h1>
           <img
             className="why-smart-stitches-background-image"
