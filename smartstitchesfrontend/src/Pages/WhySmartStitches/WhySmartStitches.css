@@ -22,9 +22,7 @@
 }
 
 .about-us-author-name {
-  font-size: 30px;
-  text-align: center;
-  font-style: italic;
+  font-size: 20px;
   font-weight: lighter;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
@@ -89,9 +87,255 @@
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 912px) {
   .why-smart-stitches-container {
+    margin-top: 0px;
+    width: 96vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1px;
+    padding: 1px;
+  }
+
+  .about-us-quote {
+    width: 88vw;
+    font-size: 40px;
+    margin-top: 0px;
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+
+  .about-us-goals-container {
+    width: 88vw;
+    margin-top: 50px;
+  }
+  .about-us-goals {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 28px;
+  }
+
+  .thank-you-note {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: #606cb4;
+    width: 80vw;
+    font-size: 28px;
+    margin-left: auto;
+    display: flex;
+  }
+
+  .why-smart-stitches-background-image {
+    display: flex;
+    height: 120px;
+  }
+
+  .thankyou-whysmartstitchesicon {
+    width: 88vw;
+    display: flex;
+    flex-direction: row;
+    margin-left: 4%;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 850px) {
+  .why-smart-stitches-container {
+    width: 97vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1px;
+    padding: 1px;
+  }
+
+  .about-us-quote {
+    width: 70vw;
+    margin-top: 20px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+
+  .about-us-author-name {
+    font-size: 17px;
+    align-items: center;
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+
+  .about-us-goals-container {
+    width: 70vw;
+    margin-top: 10px;
+  }
+  .about-us-goals {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 19px;
+  }
+
+  .thank-you-note {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: #606cb4;
+    display: flex;
+    width: 70vw;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .why-smart-stitches-background-image {
+    display: flex;
+    height: 120px;
+  }
+
+  .thankyou-whysmartstitchesicon {
+    margin-left: 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 820px) {
+  .why-smart-stitches-container {
+    width: 97%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-around;
+  }
+
+  .about-us-quote {
+    width: 70vw;
+    height: 100px;
+    font-size: 30px;
+    margin-top: 0px;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+
+  .about-us-goals-container {
+    height: 100px;
+    width: 88vw;
+    margin-top: 40px;
+  }
+  .about-us-goals {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 24px;
+  }
+
+  .thank-you-note {
+    display: flex;
+    flex-direction: column;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: #606cb4;
+    width: 50vw;
+    font-size: 27px;
+  }
+
+  .why-smart-stitches-background-image {
+    display: flex;
+    height: 120px;
+  }
+
+  .thankyou-whysmartstitchesicon {
     width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 800px) {
+  .why-smart-stitches-container {
+    width: 97%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 26px;
+    margin-left: 1px;
+    margin-right: 10px;
+  }
+
+  .about-us-quote {
+    width: 90%;
+    margin: 4px;
+
+    margin-top: 20px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+
+  .about-us-author-name {
+    font-size: 12px;
+    align-items: center;
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+
+  .about-us-goals-container {
+    width: 90vw;
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .about-us-goals {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 20px;
+  }
+
+  .thank-you-note {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: #606cb4;
+    display: flex;
+    font-size: 25px;
+    margin: 3px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .why-smart-stitches-background-image {
+    display: flex;
+    height: 140px;
+  }
+
+  .thankyou-whysmartstitchesicon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5%;
+  }
+}
+@media (max-width: 700px) {
+  .why-smart-stitches-container {
+    width: 88vw;
     height: 70vh;
     display: flex;
     flex-direction: column;
@@ -99,21 +343,24 @@
     justify-content: center;
     padding: 4px;
     margin-left: 10px;
+    margin-right: 10px;
   }
 
   .about-us-quote {
-    width: 95vw;
+    width: 88%;
     margin: 4px;
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 16px;
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   }
 
   .about-us-author-name {
-    font-size: 20px;
+    font-size: 12px;
+    align-items: center;
     text-align: center;
     font-style: italic;
     font-weight: lighter;
@@ -126,16 +373,15 @@
   }
   .about-us-goals {
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    font-size: 20px;
+    font-size: 14px;
   }
 
   .thank-you-note {
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     color: #606cb4;
     display: flex;
-    font-size: 18px;
-    margin-right: 2px;
-    margin-left: 2px;
+    font-size: 13px;
+    margin: 20px;
     display: flex;
     flex-direction: column;
   }
@@ -147,15 +393,13 @@
 
   .thankyou-whysmartstitchesicon {
     display: flex;
-    margin-left: 20px;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 }
-
-@media (max-width: 450px) {
+@media (max-width: 600px) {
   .why-smart-stitches-container {
-    width: 88%;
+    width: 88vw;
     height: 70vh;
     display: flex;
     flex-direction: column;
@@ -167,18 +411,20 @@
   }
 
   .about-us-quote {
-    width: 95vw;
+    width: 88%;
     margin: 4px;
     margin-top: 20px;
-    font-size: 13px;
+    font-size: 16px;
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   }
 
   .about-us-author-name {
     font-size: 12px;
+    align-items: center;
     text-align: center;
     font-style: italic;
     font-weight: lighter;
@@ -216,6 +462,60 @@
     margin-left: 20px;
     flex-direction: column;
     align-items: center;
+  }
+}
+@media (max-width: 540px) {
+  .why-smart-stitches-container {
+    margin-top: auto;
+    width: 96vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1px;
+    padding: 1px;
+  }
+
+  .about-us-quote {
+    width: 70vw;
+    font-size: 20px;
+    margin-top: auto;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+
+  .about-us-goals-container {
+    width: 88vw;
+    margin-top: 10px;
+  }
+  .about-us-goals {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 15px;
+  }
+
+  .thank-you-note {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: #606cb4;
+    width: 70vw;
+    font-size: 17px;
+    margin-left: auto;
+  }
+
+  .why-smart-stitches-background-image {
+    display: flex;
+    height: 120px;
+  }
+
+  .thankyou-whysmartstitchesicon {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
   }
 }
 
@@ -286,10 +586,9 @@
     align-items: center;
   }
 }
-
-@media (max-width: 600px) {
+@media (max-width: 450px) {
   .why-smart-stitches-container {
-    width: 88vw;
+    width: 88%;
     height: 70vh;
     display: flex;
     flex-direction: column;
@@ -301,20 +600,18 @@
   }
 
   .about-us-quote {
-    width: 88%;
+    width: 95vw;
     margin: 4px;
     margin-top: 20px;
-    font-size: 16px;
+    font-size: 13px;
     display: flex;
     flex-direction: column;
     text-align: center;
-    align-items: center;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   }
 
   .about-us-author-name {
     font-size: 12px;
-    align-items: center;
     text-align: center;
     font-style: italic;
     font-weight: lighter;
@@ -355,140 +652,10 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 414px) {
   .why-smart-stitches-container {
-    width: 88vw;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 4px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .about-us-quote {
-    width: 88%;
-    margin: 4px;
-    margin-top: 20px;
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  }
-
-  .about-us-author-name {
-    font-size: 12px;
-    align-items: center;
-    text-align: center;
-    font-style: italic;
-    font-weight: lighter;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  }
-
-  .about-us-goals-container {
-    width: 95vw;
-    margin-top: 10px;
-  }
-  .about-us-goals {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    font-size: 14px;
-  }
-
-  .thank-you-note {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    color: #606cb4;
-    display: flex;
-    font-size: 13px;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .why-smart-stitches-background-image {
-    display: flex;
-    height: 100px;
-  }
-
-  .thankyou-whysmartstitchesicon {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-}
-
-@media (max-width: 800px) {
-  .why-smart-stitches-container {
-    width: 85vw;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 4px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .about-us-quote {
-    width: 80vw;
-    margin: 4px;
-    margin-top: 20px;
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  }
-
-  .about-us-author-name {
-    font-size: 12px;
-    align-items: center;
-    text-align: center;
-    font-style: italic;
-    font-weight: lighter;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  }
-
-  .about-us-goals-container {
-    width: 95vw;
-    margin-top: 10px;
-  }
-  .about-us-goals {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    font-size: 14px;
-  }
-
-  .thank-you-note {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    color: #606cb4;
-    display: flex;
-    font-size: 13px;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .why-smart-stitches-background-image {
-    display: flex;
-    height: 100px;
-  }
-
-  .thankyou-whysmartstitchesicon {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-}
-
-@media (max-width: 850px) {
-  .why-smart-stitches-container {
-    width: 97vw;
-    height: 100vh;
+    width: 98%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -498,42 +665,33 @@
   }
 
   .about-us-quote {
-    width: 70vw;
-    margin-top: 20px;
-    font-size: 25px;
+    width: 80vw;
+    font-size: 15px;
+    margin-top: auto;
+    margin-left: 5%;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  }
-
-  .about-us-author-name {
-    font-size: 17px;
-    align-items: center;
-    text-align: center;
-    font-style: italic;
-    font-weight: lighter;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   }
 
   .about-us-goals-container {
-    width: 70vw;
-    margin-top: 10px;
+    width: 88vw;
+    margin-top: 30px;
   }
   .about-us-goals {
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    font-size: 19px;
+    font-size: 12px;
   }
 
   .thank-you-note {
+    margin-top: 30px;
+    margin-left: 20%;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     color: #606cb4;
-    display: flex;
-    width: 70vw;
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
+    width: 80vw;
+    font-size: 15px;
   }
 
   .why-smart-stitches-background-image {
@@ -542,16 +700,15 @@
   }
 
   .thankyou-whysmartstitchesicon {
-    margin-left: 12%;
+    width: 70vw;
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 }
 
 @media (max-width: 375px) {
   .why-smart-stitches-container {
-    width: 88vw;
+    width: 98%;
     height: 80vh;
     display: flex;
     flex-direction: column;
@@ -562,10 +719,10 @@
   }
 
   .about-us-quote {
-    width: 70vw;
+    width: 88vw;
     font-size: 15px;
     margin-top: auto;
-    margin-left: 10%;
+    margin-left: 1%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -573,18 +730,18 @@
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   }
 
-  /*.about-us-author-name {
-    font-size: 17px;
+  .about-us-author-name {
+    font-size: 10px;
     align-items: center;
     text-align: center;
     font-style: italic;
     font-weight: lighter;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  }*/
+  }
 
   .about-us-goals-container {
     width: 88vw;
-    margin-top: 10px;
+    margin-top: 20px;
   }
   .about-us-goals {
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -595,12 +752,13 @@
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     color: #606cb4;
     width: 80vw;
-    font-size: 15px;
+    font-size: 16px;
+    margin-top: 50px;
   }
 
   .why-smart-stitches-background-image {
     display: flex;
-    height: 120px;
+    height: 100px;
   }
 
   .thankyou-whysmartstitchesicon {
@@ -609,222 +767,6 @@
     flex-direction: column;
   }
 }
-
-@media (max-width: 414px) {
-  .why-smart-stitches-container {
-    width: 88vw;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 1px;
-    padding: 1px;
-  }
-
-  .about-us-quote {
-    width: 70vw;
-    font-size: 15px;
-    margin-top: auto;
-    margin-left: 10%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  }
-
-  .about-us-goals-container {
-    width: 88vw;
-    margin-top: 10px;
-  }
-  .about-us-goals {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    font-size: 11px;
-  }
-
-  .thank-you-note {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    color: #606cb4;
-    width: 80vw;
-    font-size: 15px;
-  }
-
-  .why-smart-stitches-background-image {
-    display: flex;
-    height: 120px;
-  }
-
-  .thankyou-whysmartstitchesicon {
-    width: 70vw;
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 820px) {
-  .why-smart-stitches-container {
-    width: 88vw;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 1px;
-    padding: 1px;
-  }
-
-  .about-us-quote {
-    width: 70vw;
-    font-size: 25px;
-    margin-top: auto;
-    margin-left: 10%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  }
-
-  .about-us-goals-container {
-    width: 88vw;
-    margin-top: 10px;
-  }
-  .about-us-goals {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    font-size: 19px;
-  }
-
-  .thank-you-note {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    color: #606cb4;
-    width: 80vw;
-    font-size: 24px;
-  }
-
-  .why-smart-stitches-background-image {
-    display: flex;
-    height: 120px;
-  }
-
-  .thankyou-whysmartstitchesicon {
-    width: 70vw;
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 912px) {
-  .why-smart-stitches-container {
-    margin-top: 0px;
-    width: 96vw;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 1px;
-    padding: 1px;
-  }
-
-  .about-us-quote {
-    width: 70vw;
-    font-size: 30px;
-    margin-top: auto;
-    margin-left: 10%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  }
-
-  .about-us-goals-container {
-    width: 88vw;
-    margin-top: 10px;
-  }
-  .about-us-goals {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    font-size: 23px;
-  }
-
-  .thank-you-note {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    color: #606cb4;
-    width: 80vw;
-    font-size: 24px;
-    margin-left: auto;
-    display: flex;
-  }
-
-  .why-smart-stitches-background-image {
-    display: flex;
-    height: 120px;
-  }
-
-  .thankyou-whysmartstitchesicon {
-    width: 70vw;
-    display: flex;
-    flex-direction: row;
-    margin-left: 15%;
-  }
-}
-
-@media (max-width: 540px) {
-  .why-smart-stitches-container {
-    margin-top: auto;
-    width: 96vw;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 1px;
-    padding: 1px;
-  }
-
-  .about-us-quote {
-    width: 70vw;
-    font-size: 20px;
-    margin-top: auto;
-    margin-left: 10%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  }
-
-  .about-us-goals-container {
-    width: 88vw;
-    margin-top: 10px;
-  }
-  .about-us-goals {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    font-size: 15px;
-  }
-
-  .thank-you-note {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    color: #606cb4;
-    width: 70vw;
-    font-size: 17px;
-    margin-left: auto;
-  }
-
-  .why-smart-stitches-background-image {
-    display: flex;
-    height: 120px;
-  }
-
-  .thankyou-whysmartstitchesicon {
-    width: 70vw;
-    display: flex;
-    flex-direction: column;
-    margin-left: 15%;
-  }
-}
-
 @media (max-width: 280px) {
   .why-smart-stitches-container {
     margin-top: auto;
