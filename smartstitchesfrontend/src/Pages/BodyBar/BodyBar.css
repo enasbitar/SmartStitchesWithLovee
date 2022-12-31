@@ -135,6 +135,51 @@
     color: #606cb4;
   }
 }
+@media (max-width: 950px) {
+  .body-bar-container {
+    display: flex;
+    height: 90vh;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .body-bar-background {
+    width: 100%;
+  }
+
+  .body-bar-elements-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .body-bar-elements {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: #606cb4;
+    list-style: none;
+    text-decoration: none !important;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    width: 50%;
+    height: 70px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 28px;
+  }
+
+  .body-bar-elements:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #606cb4;
+  }
+}
 @media (max-width: 912px) {
   .body-bar-container {
     display: flex;
@@ -315,6 +360,51 @@
     color: #606cb4;
   }
 }
+@media (max-width: 760px) {
+  .body-bar-container {
+    display: flex;
+    height: 60vh;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .body-bar-background {
+    width: 100%;
+  }
+
+  .body-bar-elements-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    flex-direction: column;
+    width: 90vw;
+  }
+
+  .body-bar-elements {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: #606cb4;
+    list-style: none;
+    text-decoration: none !important;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    width: 50%;
+    height: 30%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 10px;
+  }
+
+  .body-bar-elements:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #606cb4;
+  }
+}
 @media (max-width: 700px) {
   .body-bar-container {
     display: flex;
@@ -325,7 +415,7 @@
   }
 
   .body-bar-background {
-    width: 97%;
+    width: 100%;
   }
 
   .body-bar-elements-container {
@@ -397,6 +487,51 @@
     padding: 10px;
     border-radius: 10px;
     font-size: 13px;
+  }
+
+  .body-bar-elements:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #606cb4;
+  }
+}
+@media (max-width: 580px) {
+  .body-bar-container {
+    display: flex;
+    height: 55vh;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .body-bar-background {
+    width: 100%;
+  }
+
+  .body-bar-elements-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    flex-direction: column;
+    width: 120vw;
+  }
+
+  .body-bar-elements {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: #606cb4;
+    list-style: none;
+    text-decoration: none !important;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    width: 50%;
+    height: 60px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
   }
 
   .body-bar-elements:hover {
@@ -499,13 +634,58 @@
   .body-bar-container {
     display: flex;
     height: 40vh;
-    width: 97%;
+    width: 100%;
     align-items: center;
     overflow: hidden;
   }
 
   .body-bar-background {
-    width: 97%;
+    width: 100%;
+  }
+
+  .body-bar-elements-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    flex-direction: column;
+    width: 90vw;
+  }
+
+  .body-bar-elements {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: #606cb4;
+    list-style: none;
+    text-decoration: none !important;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    width: 50%;
+    height: 30%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 10px;
+  }
+
+  .body-bar-elements:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #606cb4;
+  }
+}
+@media (max-width: 430px) {
+  .body-bar-container {
+    display: flex;
+    height: 40vh;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .body-bar-background {
+    width: 100%;
   }
 
   .body-bar-elements-container {

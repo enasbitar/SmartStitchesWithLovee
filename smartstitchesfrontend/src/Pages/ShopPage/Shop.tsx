@@ -78,8 +78,11 @@ export default function SHOP({ searchValue }: { searchValue: string }) {
                             key={index}
                             title={product.title}
                             description={product.description}
-                            category={product.category}
-                            price={product.price}
+                            brand={product.brand}
+                            color={product.color}
+                            size={product.size}
+                            composition={product.composition}
+                            quantity={product.quantity}
                           />
                         </div>
                       </>

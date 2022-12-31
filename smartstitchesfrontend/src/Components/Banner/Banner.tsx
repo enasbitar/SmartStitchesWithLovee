@@ -47,6 +47,7 @@ function Banner({
     setSearchValue(event.target.value);
   };
 
+  //
   return (
     <>
       {isLogInPopup ? <LoginPopup closePopup={closePopup} /> : null}
@@ -73,6 +74,9 @@ function Banner({
               onInput={(event) => {
                 handleSearchChange(event);
               }}
+              // onKeyDown={(event) => {
+              //  navigateToSection(event);
+              // }}
             />
           </label>
           <img className="search-bar-logo" src={searchbarlogo} alt="Logo" />
