@@ -1,5 +1,6 @@
 import React from "react";
 import "./Banner.css";
+import { HashLink } from "react-router-hash-link";
 import { useDispatch, useSelector } from "react-redux";
 import { useRef, useEffect, useState, ChangeEvent } from "react";
 import { useNavigate } from "react-router-dom";
@@ -79,7 +80,9 @@ function Banner({
               // }}
             />
           </label>
-          <img className="search-bar-logo" src={searchbarlogo} alt="Logo" />
+          <HashLink to="/#Shop">
+            <img className="search-bar-logo" src={searchbarlogo} alt="Logo" />
+          </HashLink>
         </div>
       </div>
     </>

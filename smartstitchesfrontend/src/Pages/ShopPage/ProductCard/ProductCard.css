@@ -17,12 +17,13 @@
 }
 .product-card-name-description {
   width: 550px;
-  height: 380px;
+  height: 350px;
   padding: 10px;
   margin: 70px;
   display: flex;
   flex-direction: column;
   text-align: start;
+  font-size: large;
 }
 @media (max-width: 1280px) {
   .product-card-item {
