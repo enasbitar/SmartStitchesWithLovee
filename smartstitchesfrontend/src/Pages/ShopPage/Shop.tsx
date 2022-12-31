@@ -3,24 +3,15 @@ import React, { useCallback, useState, useEffect } from "react";
 //component
 import ProductCard from "./ProductCard/ProductCard";
 import Carousel from "react-material-ui-carousel";
-import handleSearchChange from "../../Components/Banner/Banner";
 import data from "../../Helpers/jsonAPI.json";
+import { useSelector } from "react-redux";
 /*async function getData() {
   const response = await fetch("https://fakestoreapi.com/products");
   const products = await response.json();
   return products;
 }*/
 
-export default function SHOP() {
-  /*const [products, setProducts] = useState([]);
- useEffect(() => {
-    async function fetchData() {
-      const products = await getData();
-      setProducts(products);
-    }
-    fetchData();
-  }, []);*/
-  //
+export default function SHOP({ searchValue }: { searchValue: string }) {
   const products = data["products"];
 
   const [activeChild, setActiveChild] = useState(0);
@@ -46,6 +37,20 @@ export default function SHOP() {
     };
   });
 
+  const filterProducts = (searchValue: string, products: any) => {
+    const value = searchValue;
+    let filteredProducts = [...products];
+    if (value) {
+      const regex = new RegExp(value, "gi");
+      filteredProducts = products.filter(
+        (products: any) =>
+          products.title.match(regex) || products.description.match(regex)
+      );
+    }
+    console.log(filteredProducts);
+    return filteredProducts;
+  };
+
   //
   return (
     <>
@@ -62,22 +67,25 @@ export default function SHOP() {
               autoPlay={false}
               navButtonsAlwaysVisible
             >
-              {products.map((product: any, index: number) => {
-                return (
-                  <>
-                    <div>
-                      <ProductCard
-                        image={product.image}
-                        key={index}
-                        title={product.title}
-                        description={product.description}
-                        category={product.category}
-                        price={product.price}
-                      />
-                    </div>
-                  </>
-                );
-              })}
+              {filterProducts(searchValue, products) &&
+                filterProducts(searchValue, products).map(
+                  (product: any, index: number) => {
+                    return (
+                      <>
+                        <div>
+                          <ProductCard
+                            image={product.image}
+                            key={index}
+                            title={product.title}
+                            description={product.description}
+                            category={product.category}
+                            price={product.price}
+                          />
+                        </div>
+                      </>
+                    );
+                  }
+                )}
             </Carousel>
           </div>
         </div>

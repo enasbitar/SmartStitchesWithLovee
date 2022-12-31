@@ -51,6 +51,12 @@ function ProductsManagement() {
   const columns: GridColDef[] = [
     { field: "id", headerName: "ID", flex: 0.2 },
     {
+      field: "image",
+      headerName: "image",
+      flex: 1,
+      editable: true,
+    },
+    {
       field: "title",
       headerName: "title",
       flex: 1,
@@ -65,7 +71,7 @@ function ProductsManagement() {
     {
       field: "Actions",
       headerName: "Actions",
-      flex: 0.3,
+      flex: 1,
       renderCell: (row: any) => {
         return (
           <>

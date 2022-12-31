@@ -1,47 +1,56 @@
 import React from "react";
 import "./Banner.css";
+import { useDispatch, useSelector } from "react-redux";
 import { useRef, useEffect, useState, ChangeEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import smartstitcheslogo from "../../Assets/BannerImages/Logo.png";
 import searchbarlogo from "../../Assets/BannerImages/searchbaricon.png";
-import products from "../../Pages/ShopPage/Shop";
+// import products from "../../Pages/ShopPage/Shop";
 import LoginButton from "../LoginPopup/LoginPopup";
 import LoginPopup from "../LoginPopup/LoginPopup";
+import {
+  getAllProductsRequest,
+  deleteProductRequest,
+} from "../../Store/Thunk/ProductsThunk";
+import { filterableGridColumnsIdsSelector } from "@mui/x-data-grid";
+// import ProductPopup from "../ProductPopup/ProductPopup";
 
-interface APIResponse {
-  elements: Element[];
-}
-
-interface Element {
+type Product = {
   title: string;
-}
+  description: string;
+  // Other properties of the product
+};
 
-function Banner() {
+function Banner({
+  searchValue,
+  setSearchValue,
+}: {
+  searchValue: string;
+  setSearchValue: any;
+}) {
+  const products = useSelector((state: any) => state.ProductReducer);
   const navigate = useNavigate();
+  const dispatch = useDispatch<any>();
+
+  //
   const [isLogInPopup, setLogInPopup] = useState(false);
   const closePopup = () => {
     setLogInPopup(false);
   };
 
-  /*  const handleSearchChange = (event: any) => {
-    let value = event.target.value;
+  //
+  useEffect(() => {
+    products.length <= 0 && dispatch(getAllProductsRequest());
+  }, [dispatch]);
 
-    let newArray: any = [];
-    products.find((e, index) => {
-      if (e.name.toLowerCase().includes(value.toLowerCase())) {
-        newArray.push(products[index]);
-      }
-    });
-    console.log("newArray: ", newArray);
-
-    setTempProducts(newArray);
+  const handleSearchChange = (event: any) => {
+    setSearchValue(event.target.value);
   };
-*/
+
   return (
     <>
-      {console.log("meassge", isLogInPopup)}
       {isLogInPopup ? <LoginPopup closePopup={closePopup} /> : null}
-      {console.log("meassge", isLogInPopup)}
+      {/* {isProductPopup ? <ProductPopup closePopup={closePopup} /> : null} */}
       <div className="banner-container">
         <img
           className="banner-smart-stitches-logo"
@@ -57,7 +66,14 @@ function Banner() {
         </h3>
         <div className="search-box-and-logo">
           <label>
-            <input className="search-box" type="text" name="name" />
+            <input
+              className="search-box"
+              type="text"
+              name="name"
+              onInput={(event) => {
+                handleSearchChange(event);
+              }}
+            />
           </label>
           <img className="search-bar-logo" src={searchbarlogo} alt="Logo" />
         </div>
