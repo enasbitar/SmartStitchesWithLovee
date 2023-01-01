@@ -363,7 +363,7 @@
 @media (max-width: 760px) {
   .body-bar-container {
     display: flex;
-    height: 60vh;
+    height: 40vh;
     width: 100%;
     align-items: center;
     overflow: hidden;
@@ -392,11 +392,11 @@
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     width: 50%;
-    height: 30%;
+    height: 50px;
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
-    font-size: 10px;
+    font-size: 17px;
   }
 
   .body-bar-elements:hover {
@@ -450,10 +450,55 @@
     color: #606cb4;
   }
 }
+@media (max-width: 640px) {
+  .body-bar-container {
+    display: flex;
+    height: 111vh;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .body-bar-background {
+    width: 100%;
+  }
+
+  .body-bar-elements-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    flex-direction: column;
+    width: 90vw;
+  }
+
+  .body-bar-elements {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: #606cb4;
+    list-style: none;
+    text-decoration: none !important;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    width: 50%;
+    height: 40px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 13px;
+  }
+
+  .body-bar-elements:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #606cb4;
+  }
+}
 @media (max-width: 600px) {
   .body-bar-container {
     display: flex;
-    height: 35vh;
+    height: 40vh;
     width: 100%;
     align-items: center;
     overflow: hidden;
@@ -769,6 +814,51 @@
 @media (max-width: 412px) {
   .body-bar-container {
     display: flex;
+    height: 37vh;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .body-bar-background {
+    width: 100%;
+  }
+
+  .body-bar-elements-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    flex-direction: column;
+    width: 90vw;
+  }
+
+  .body-bar-elements {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: #606cb4;
+    list-style: none;
+    text-decoration: none !important;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    width: 50%;
+    height: 30%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 10px;
+  }
+
+  .body-bar-elements:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #606cb4;
+  }
+}
+@media (max-width: 393px) {
+  .body-bar-container {
+    display: flex;
     height: 30vh;
     width: 100%;
     align-items: center;
@@ -811,6 +901,7 @@
     color: #606cb4;
   }
 }
+
 @media (max-width: 390px) {
   .body-bar-container {
     display: flex;
@@ -856,10 +947,56 @@
     color: #606cb4;
   }
 }
+
+@media (max-width: 384px) {
+  .body-bar-container {
+    display: flex;
+    height: 38vh;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .body-bar-background {
+    width: 100%;
+  }
+
+  .body-bar-elements-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .body-bar-elements {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: #606cb4;
+    list-style: none;
+    text-decoration: none !important;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    width: 50%;
+    height: 50%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 10px;
+  }
+
+  .body-bar-elements:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #606cb4;
+  }
+}
 @media (max-width: 375px) {
   .body-bar-container {
     display: flex;
-    height: 30vh;
+    height: 37vh;
     width: 100%;
     align-items: center;
     overflow: hidden;
@@ -902,7 +1039,98 @@
     color: #606cb4;
   }
 }
+@media (max-width: 360px) {
+  .body-bar-container {
+    display: flex;
+    height: 30vh;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+  }
 
+  .body-bar-background {
+    width: 100%;
+  }
+
+  .body-bar-elements-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    flex-direction: column;
+    width: 140vw;
+    height: 20vh;
+  }
+
+  .body-bar-elements {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: #606cb4;
+    list-style: none;
+    text-decoration: none !important;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    width: 50%;
+    height: 30%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 10px;
+  }
+
+  .body-bar-elements:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #606cb4;
+  }
+}
+@media (max-width: 353px) {
+  .body-bar-container {
+    display: flex;
+    height: 30vh;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .body-bar-background {
+    width: 100%;
+  }
+
+  .body-bar-elements-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    flex-direction: column;
+    width: 140vw;
+    height: 20vh;
+  }
+
+  .body-bar-elements {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: #606cb4;
+    list-style: none;
+    text-decoration: none !important;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    width: 50%;
+    height: 30%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 10px;
+  }
+
+  .body-bar-elements:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #606cb4;
+  }
+}
 @media (max-width: 320px) {
   .body-bar-container {
     display: flex;
