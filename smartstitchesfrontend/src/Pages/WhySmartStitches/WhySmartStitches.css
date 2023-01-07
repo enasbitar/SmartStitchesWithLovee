@@ -903,6 +903,76 @@
     align-items: center;
   }
 }
+@media (max-width: 712px) {
+  .why-smart-stitches-container {
+    width: 92%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    margin-left: 50px;
+    margin-right: 10px;
+  }
+
+  .about-us-quote {
+    width: 80%;
+    margin: 4px;
+    margin-left: 3%;
+    margin-top: 20px;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-family: "Dancing Script", cursive;
+  }
+
+  .about-us-author-name {
+    font-size: 18px;
+    align-items: center;
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+
+  .about-us-goals-container {
+    margin-top: 30px;
+    margin-left: 40px;
+  }
+  .about-us-goals {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 20px;
+    margin-left: 20px;
+    width: 90vw;
+  }
+
+  .thank-you-note {
+    font-family: "Dancing Script", cursive;
+    color: #606cb4;
+    display: flex;
+    font-size: 24px;
+    margin-right: 2px;
+    margin-left: 30px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .why-smart-stitches-background-image {
+    display: flex;
+    height: 100px;
+  }
+
+  .thankyou-whysmartstitchesicon {
+    display: flex;
+    margin-left: 20px;
+    flex-direction: row;
+    align-items: center;
+  }
+}
 @media (max-width: 700px) {
   .why-smart-stitches-container {
     width: 92%;
@@ -1258,7 +1328,7 @@
 @media (max-width: 600px) {
   .why-smart-stitches-container {
     width: 93%;
-    height: 60vh;
+    height: 35vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1291,7 +1361,7 @@
   }
 
   .about-us-goals-container {
-    margin-top: 10px;
+    margin-top: 40px;
     margin-left: 16px;
   }
   .about-us-goals {
@@ -2134,7 +2204,7 @@
 @media (max-width: 360px) {
   .why-smart-stitches-container {
     width: 98%;
-    height: 70vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;

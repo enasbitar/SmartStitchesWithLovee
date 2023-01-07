@@ -608,6 +608,51 @@
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   }
 }
+
+@media (max-width: 712px) {
+  .contact-us-container {
+    height: 80vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .contact-us-image {
+    margin-left: auto;
+    margin-top: auto;
+    height: 40%;
+  }
+  .contact-us-bar {
+    align-items: center;
+    text-align: center;
+    background-color: #606cb4;
+    height: 170px;
+    width: 180px;
+    margin: 15%;
+    margin-top: 0;
+    padding: 20px;
+    position: absolute;
+  }
+
+  .contact-us-title {
+    margin-top: 100px;
+    color: white;
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+
+  .email-to-smart-stitches {
+    cursor: pointer;
+    font-size: 17px;
+    margin-left: 0%;
+    margin-top: 50px;
+    color: #606cb4;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+}
 @media (max-width: 700px) {
   .contact-us-container {
     height: 120vh;
@@ -786,7 +831,7 @@
 }
 @media (max-width: 600px) {
   .contact-us-container {
-    height: 120vh;
+    height: 60vh;
     width: 90vw;
     display: flex;
     flex-direction: row;
@@ -797,7 +842,7 @@
   .contact-us-image {
     margin-left: auto;
     margin-top: auto;
-    height: 43%;
+    height: 45%;
   }
   .contact-us-bar {
     align-items: center;
@@ -1401,7 +1446,52 @@
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   }
 }
+@media (max-width: 360px) {
+  .contact-us-container {
+    height: 80vh;
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+  }
 
+  .contact-us-image {
+    margin-left: auto;
+    margin-top: auto;
+    height: 37%;
+  }
+  .contact-us-bar {
+    align-items: center;
+    text-align: center;
+    height: 150px;
+    width: 190px;
+    margin: 15%;
+    margin-top: 0;
+    padding: 20px;
+    position: absolute;
+  }
+
+  .contact-us-title {
+    margin-top: 100px;
+    color: white;
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+
+  .email-to-smart-stitches {
+    justify-content: flex-start;
+    cursor: pointer;
+    display: flex;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    color: #606cb4;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+}
 @media (max-width: 320px) {
   .contact-us-container {
     height: 80vh;

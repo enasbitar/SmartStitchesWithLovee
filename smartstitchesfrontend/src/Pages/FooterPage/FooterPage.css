@@ -535,8 +535,8 @@
   .footer-section-background {
     position: relative;
     overflow: hidden;
+    width: 60vh;
     width: 100%;
-    height: 100%;
   }
 
   .footer-logo-and-quote {
@@ -545,7 +545,7 @@
     display: flex;
     flex-direction: column;
     bottom: 50%;
-    margin-left: 30%;
+    margin-left: 35%;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   }
 
@@ -555,7 +555,7 @@
   }
 
   .footer-smart-stitches-logo {
-    width: 210px;
+    width: 190px;
   }
 }
 @media (max-width: 590px) {
