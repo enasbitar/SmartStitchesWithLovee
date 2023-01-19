@@ -20,11 +20,11 @@ export default function SHOP({ searchValue }: { searchValue: string }) {
     (e: KeyboardEvent) => {
       if (e.key === "ArrowLeft") {
         setActiveChild((a) => (a - 1 < 0 ? products.length - 1 : a - 1));
-        console.log("hi");
+        
       } else if (e.key === "ArrowRight") {
         setActiveChild((a) => (a + 1 > products.length - 1 ? 0 : a + 1));
 
-        console.log("helloo");
+        
       }
     },
     [products]
@@ -74,8 +74,8 @@ export default function SHOP({ searchValue }: { searchValue: string }) {
                       <>
                         <div>
                           <ProductCard
-                            image={product.image}
                             key={index}
+                            image={product.image}
                             title={product.title}
                             description={product.description}
                             brand={product.brand}

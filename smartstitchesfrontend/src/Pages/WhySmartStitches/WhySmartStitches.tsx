@@ -9,7 +9,7 @@ function WhySmartStitches() {
         <h2 className="about-us-quote">
           “Don’t find customers for your products, find products for your
           customers.”
-          <h5 className="about-us-author-name">Seth Godin </h5>
+          <p className="about-us-author-name">Seth Godin </p>
         </h2>
 
         <h2 className="about-us-goals-container">

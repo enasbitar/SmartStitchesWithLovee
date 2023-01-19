@@ -373,10 +373,10 @@
 @media (max-width: 760px) {
   .product-card-item {
     align-items: center !important;
-    flex-direction: column;
+    flex-direction: unset;
     display: flex;
-    margin-top: 100px;
-    width: 80vw;
+    margin-top: -173px;
+    width: 104vw;
     height: 150vh;
     padding: 10px;
     scroll-snap-align: start;
@@ -395,10 +395,10 @@
   .product-card-name-description {
     text-align: start;
     font-size: 13px;
-    width: 45vw;
-    height: 40vw;
+    width: 43vw;
+    height: 25vw;
     padding: 3px;
-    margin-left: 70px;
+    margin-left: 50px;
     display: flex;
     flex-direction: column;
   }

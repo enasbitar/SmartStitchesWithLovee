@@ -81,6 +81,7 @@
     font-size: 25px;
     margin-top: 50px;
     margin-left: 30%;
+    margin-right: 2%;
     color: #606cb4;
     text-decoration: none;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -125,6 +126,7 @@
     font-size: 25px;
     margin-top: 50px;
     margin-left: 30%;
+    margin-right: 20%;
     color: #606cb4;
     text-decoration: none;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -196,7 +198,7 @@
     width: 150px;
     margin: 15%;
     margin-top: 0;
-    padding: 20px;
+    padding: 5px;
     position: absolute;
   }
 
@@ -340,6 +342,7 @@
     cursor: pointer;
     font-size: 17px;
     margin-left: 0%;
+    margin-right: 2%;
     margin-top: 50px;
     color: #606cb4;
     text-decoration: none;
@@ -558,6 +561,7 @@
     cursor: pointer;
     font-size: 17px;
     margin-left: 0%;
+    margin-right: 3%;
     margin-top: 50px;
     color: #606cb4;
     text-decoration: none;
@@ -602,6 +606,7 @@
     cursor: pointer;
     font-size: 17px;
     margin-left: 0%;
+    margin-right: 2%;
     margin-top: 50px;
     color: #606cb4;
     text-decoration: none;
@@ -647,6 +652,7 @@
     cursor: pointer;
     font-size: 17px;
     margin-left: 0%;
+    margin-right: 3%;
     margin-top: 50px;
     color: #606cb4;
     text-decoration: none;
@@ -691,6 +697,7 @@
     cursor: pointer;
     font-size: 17px;
     margin-left: 0%;
+    margin-right: 2%;
     margin-top: 50px;
     color: #606cb4;
     text-decoration: none;
@@ -735,6 +742,7 @@
     cursor: pointer;
     font-size: 17px;
     margin-left: 0%;
+    margin-right: 2%;
     margin-top: 50px;
     color: #606cb4;
     text-decoration: none;
@@ -764,7 +772,7 @@
     width: 180px;
     margin: 15%;
     margin-top: 0;
-    padding: 20px;
+    padding: 16px;
     position: absolute;
   }
 
@@ -779,6 +787,7 @@
     cursor: pointer;
     font-size: 17px;
     margin-left: 0%;
+    margin-right: 2%;
     margin-top: 10px;
     color: #606cb4;
     text-decoration: none;
@@ -823,6 +832,7 @@
     cursor: pointer;
     font-size: 17px;
     margin-left: 0%;
+    margin-right: 6%;
     margin-top: 10px;
     color: #606cb4;
     text-decoration: none;
@@ -852,7 +862,7 @@
     width: 180px;
     margin: 15%;
     margin-top: 0;
-    padding: 20px;
+    padding: 10px;
     position: absolute;
   }
 
@@ -867,6 +877,7 @@
     cursor: pointer;
     font-size: 17px;
     margin-left: 0%;
+    margin-right: 6%;
     margin-top: 50px;
     color: #606cb4;
     text-decoration: none;
@@ -896,7 +907,7 @@
     width: 150px;
     margin: 15%;
     margin-top: 0;
-    padding: 20px;
+    padding: 4px;
     position: absolute;
   }
 
@@ -910,6 +921,7 @@
   .email-to-smart-stitches {
     cursor: pointer;
     margin-left: 3%;
+    margin-right: 6%;
     font-size: 18px;
     margin-top: 50px;
     color: #606cb4;
@@ -940,7 +952,7 @@
     width: 150px;
     margin: 15%;
     margin-top: 0;
-    padding: 20px;
+    padding: 4px;
     position: absolute;
   }
 
@@ -954,6 +966,7 @@
   .email-to-smart-stitches {
     cursor: pointer;
     margin-left: 3%;
+    margin-right: 6%;
     font-size: 18px;
     margin-top: 50px;
     color: #606cb4;
@@ -984,7 +997,7 @@
     width: 150px;
     margin: 15%;
     margin-top: 0;
-    padding: 20px;
+    padding: 4px;
     position: absolute;
   }
 
@@ -998,6 +1011,7 @@
   .email-to-smart-stitches {
     cursor: pointer;
     margin-left: 3%;
+    margin-right: 6%;
     font-size: 18px;
     margin-top: 50px;
     color: #606cb4;
@@ -1028,7 +1042,7 @@
     width: 150px;
     margin: 15%;
     margin-top: 0;
-    padding: 20px;
+    padding: 5px;
     position: absolute;
   }
 
@@ -1042,8 +1056,10 @@
   .email-to-smart-stitches {
     cursor: pointer;
     margin-left: 3%;
+    margin-right: 2%;
     font-size: 16px;
     margin-top: 50px;
+    margin-right: 5%;
     color: #606cb4;
     text-decoration: none;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -1072,7 +1088,7 @@
     width: 180px;
     margin: 15%;
     margin-top: 0;
-    padding: 20px;
+    padding: 0px;
     position: absolute;
   }
 
@@ -1087,6 +1103,7 @@
     cursor: pointer;
     font-size: 16px;
     margin-top: 50px;
+    margin-right: 6%;
     color: #606cb4;
     text-decoration: none;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -1128,8 +1145,9 @@
 
   .email-to-smart-stitches {
     cursor: pointer;
-    font-size: 16px;
+    font-size: 15px;
     margin-top: 50px;
+    margin-right: 7%;
     color: #606cb4;
     text-decoration: none;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -1173,6 +1191,8 @@
     cursor: pointer;
     font-size: 14px;
     margin-top: 50px;
+    margin-right: 7%;
+    margin-left: auto;
     color: #606cb4;
     text-decoration: none;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -1214,8 +1234,10 @@
 
   .email-to-smart-stitches {
     cursor: pointer;
-    font-size: 13px;
+    font-size: 12.5px;
     margin-top: 50px;
+    margin-right: 6%;
+    margin-left: 8%;
     color: #606cb4;
     text-decoration: none;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -1244,7 +1266,7 @@
     width: 150px;
     margin: 15%;
     margin-top: 0;
-    padding: 20px;
+    padding: 4px;
     position: absolute;
   }
 
@@ -1259,7 +1281,8 @@
     cursor: pointer;
     font-size: 13px;
     margin-top: 50px;
-    margin-left: 7%;
+    margin-left: 5%;
+    margin-right: 7%;
     color: #606cb4;
     text-decoration: none;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -1288,7 +1311,7 @@
     width: 150px;
     margin: 15%;
     margin-top: 0;
-    padding: 20px;
+    padding: 7px;
     position: absolute;
   }
 
@@ -1301,8 +1324,9 @@
 
   .email-to-smart-stitches {
     cursor: pointer;
-    font-size: 14px;
-    margin-left: 1%;
+    font-size: 13px;
+    margin-left: 0%;
+    margin-right: 0%;
     margin-top: 5px;
     color: #606cb4;
     text-decoration: none;
@@ -1347,8 +1371,55 @@
   .email-to-smart-stitches {
     cursor: pointer;
     font-size: 12px;
-    margin-left: 6%;
+    margin-left: 5%;
+    margin-right: 6%;
     margin-top: 50px;
+    color: #606cb4;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+}
+
+@media (max-width: 391px) {
+  .contact-us-container {
+    height: 70vh;
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .contact-us-image {
+    margin-left: auto;
+    margin-top: auto;
+    height: 35%;
+  }
+  .contact-us-bar {
+    align-items: center;
+    text-align: center;
+    background-color: #606cb4;
+    height: 150px;
+    width: 180px;
+    margin: 15%;
+    margin-top: 0;
+    padding: 20px;
+    position: absolute;
+  }
+
+  .contact-us-title {
+    margin-top: 100px;
+    color: white;
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+
+  .email-to-smart-stitches {
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 50px;
+    margin-right: 10%;
+    margin-left: 7%;
     color: #606cb4;
     text-decoration: none;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -1393,7 +1464,8 @@
     cursor: pointer;
     font-size: 12px;
     margin-top: 50px;
-    margin-right: 2%;
+    margin-right: 10%;
+    margin-left: 7%;
     color: #606cb4;
     text-decoration: none;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -1438,8 +1510,8 @@
     cursor: pointer;
     display: flex;
     width: 300px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0%;
+    margin-right: 0%;
     font-size: 12px;
     color: #606cb4;
     text-decoration: none;
@@ -1484,9 +1556,9 @@
     cursor: pointer;
     display: flex;
     width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 12px;
+    margin-left: 0%;
+    margin-right: 0%;
+    font-size: 10.5px;
     color: #606cb4;
     text-decoration: none;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -1530,7 +1602,8 @@
     cursor: pointer;
     display: flex;
     margin-left: 0%;
-    font-size: 10px;
+    margin-right: 0%;
+    font-size: 9px;
     color: #606cb4;
     text-decoration: none;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -1574,6 +1647,8 @@
     cursor: pointer;
     font-size: 8px;
     margin-top: 50px;
+    margin-right: 10%;
+    margin-left: 7%;
     color: #606cb4;
     text-decoration: none;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;

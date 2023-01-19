@@ -814,7 +814,7 @@
 @media (max-width: 640px) {
   .body-bar-container {
     display: flex;
-    height: 111vh;
+    height: 59vh;
     width: 100%;
     align-items: center;
     overflow: hidden;

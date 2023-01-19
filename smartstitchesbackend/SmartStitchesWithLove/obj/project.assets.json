@@ -3895,19 +3895,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\VisualizerPC\\.nuget\\packages\\": {}
+    "C:\\Users\\ACER\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\PROJECTS\\Inass\\Enas Web Dev\\SmartStitchesWithLove\\SmartStitchesWithLovee\\smartstitchesbackend\\SmartStitchesWithLove\\SmartStitchesWithLove.csproj",
+      "projectUniqueName": "C:\\Users\\ACER\\Desktop\\SmartStitches\\SmartStitchesWithLovee\\smartstitchesbackend\\SmartStitchesWithLove\\SmartStitchesWithLove.csproj",
       "projectName": "SmartStitchesWithLove",
-      "projectPath": "F:\\PROJECTS\\Inass\\Enas Web Dev\\SmartStitchesWithLove\\SmartStitchesWithLovee\\smartstitchesbackend\\SmartStitchesWithLove\\SmartStitchesWithLove.csproj",
-      "packagesPath": "C:\\Users\\VisualizerPC\\.nuget\\packages\\",
-      "outputPath": "F:\\PROJECTS\\Inass\\Enas Web Dev\\SmartStitchesWithLove\\SmartStitchesWithLovee\\smartstitchesbackend\\SmartStitchesWithLove\\obj\\",
+      "projectPath": "C:\\Users\\ACER\\Desktop\\SmartStitches\\SmartStitchesWithLovee\\smartstitchesbackend\\SmartStitchesWithLove\\SmartStitchesWithLove.csproj",
+      "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ACER\\Desktop\\SmartStitches\\SmartStitchesWithLovee\\smartstitchesbackend\\SmartStitchesWithLove\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\VisualizerPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

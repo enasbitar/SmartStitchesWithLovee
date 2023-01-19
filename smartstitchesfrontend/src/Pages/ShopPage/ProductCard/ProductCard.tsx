@@ -22,27 +22,27 @@ export default function ProductCard(props: ProductCardProps) {
           <div className="product-card-name-description">
             <h3>{props.title}</h3>
             <p>
-              <h4>Description : </h4>
+              <>Description : </>
               {props.description}
             </p>
             <p>
-              <h4>brand : </h4>
+              <>brand : </>
               {props.brand}
             </p>
             <p>
-              <h4>color : </h4>
+              <>color : </>
               {props.color}
             </p>
             <p>
-              <h4>size : </h4>
+              <>size : </>
               {props.size}
             </p>
             <p>
-              <h4>composition : </h4>
+              <>composition : </>
               {props.composition}
             </p>
             <p>
-              <h4>quantity : </h4>
+              <>quantity : </>
               {props.quantity}
             </p>
           </div>
