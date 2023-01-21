@@ -51,16 +51,13 @@ function Banner({
   //
   return (
     <>
-      {isLogInPopup ? <LoginPopup closePopup={closePopup} /> : null}
-      {/* {isProductPopup ? <ProductPopup closePopup={closePopup} /> : null} */}
+     
       <div className="banner-container">
         <img
           className="banner-smart-stitches-logo"
           src={smartstitcheslogo}
           alt="Logo"
-          onClick={() => {
-            setLogInPopup(true);
-          }}
+         
         />
 
         <h3 className="banner-declaration">
